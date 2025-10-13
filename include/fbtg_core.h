@@ -1,11 +1,14 @@
 #pragma once
 
 #include <iostream>
+#include <dlfcn.h>
 #include <GLFW/glfw3.h>
 #include <cmath>
+#include <vector>
+#include "escgen.hpp"
 #define _GLFW_WAYLAND
 
 void parse_config();
 void init_subsystems();
-void run();
+void run(GLFWwindow* _window);
 void shutdown();
