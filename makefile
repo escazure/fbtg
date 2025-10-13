@@ -3,16 +3,19 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Iinclude  
 LDFLAGS = -lglfw -lGL -ldl -lpthread -lwayland-client
 
-SRC = core/*.cpp
+SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp rendering/fbtg_render.cpp etc/escgen.cpp
 OBJ = $(SRC:.cpp=.o)
-TARGET = fbtg
 
-all: $(TARGET)
+fbtg: $(OBJ)
+	$(CXX) $(OBJ) -o fbtg $(LDFLAGS)
 
-$(TARGET): $(OBJ)
-	$(CXX) $(OBJ) -o $(TARGET) $(LDFLAGS)
+core/%.o: core/%.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-%.o: %.cpp
+rendering/%.o: rendering/%.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+etc/%.o: etc/%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY: clean

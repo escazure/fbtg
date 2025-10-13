@@ -9,6 +9,6 @@
 #define _GLFW_WAYLAND
 
 void parse_config();
-void init_subsystems();
+GLFWwindow* init_subsystems();
 void run(GLFWwindow* _window);
-void shutdown();
+void shutdown(void** _handle, GLFWwindow* _window);
