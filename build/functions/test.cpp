@@ -1,0 +1,1 @@
+extern "C" float test(float x, float y = 0){return x+y;}

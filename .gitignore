@@ -1,6 +1,4 @@
 *.o
 *.out
 *.exe
-fbtg
-functions/
-build/functions/
+

@@ -8,4 +8,5 @@ Planned features:
 - Export system
 - Statistics
 
-
+To compile enter this commands:
+make ; make clean ; build/fbtg
