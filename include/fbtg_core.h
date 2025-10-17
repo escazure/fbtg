@@ -5,7 +5,6 @@
 #include <GLFW/glfw3.h>
 #include <cmath>
 #include <vector>
-#include "escgen.hpp"
 #define _GLFW_WAYLAND
 
 void parse_config();

@@ -1,10 +1,11 @@
 #include "fbtg_core.h"
 #include "fbtg_callbacks.h"
 #include "fbtg_render.h"
-#include "escgen.hpp"
+#include "plugin_system.hpp"
+#include "input.h"
 
-std::vector<escgen::Vertex> t_buffer;
-std::size_t width = 8, length = 8;
+std::vector<plugin_system::Vertex> t_buffer;
+std::size_t width = 32, length = 32;
 
 GLFWwindow* init_subsystems(){
     glfwSetErrorCallback(error_callback);
@@ -36,6 +37,9 @@ void run(GLFWwindow* _window){
 		render_buffer(t_buffer, width, length);
 		glfwSwapBuffers(_window);
 		glfwPollEvents();
+		Input::update(_window);
+		glClearColor(0.3,0.5,0.7,0.7);
+		glClear(GL_COLOR_BUFFER_BIT);
 	}	
 }
 
@@ -55,12 +59,12 @@ int main(){
 	std::cout << "Provide function name: \n";
 	std::getline(std::cin, test_name);
 
-	if(!escgen::write_fun(test_fun, test_name)){
+	if(!plugin_system::write_fun(test_fun, test_name)){
 		error_callback(-1, ("Failed to open/create file: " + test_name).c_str());
 		return 1;
 	}
     
-	if(!escgen::compile_fun(test_name)){
+	if(!plugin_system::compile_fun(test_name)){
 		error_callback(-2, ("Failed to compile file: " + test_name).c_str());
 		return 1;
 	}
@@ -68,7 +72,7 @@ int main(){
 	float (*fun)(float,float);
 	void* handle;
 
-	if(!escgen::get_fun_pointer(test_name, &fun, &handle)){
+	if(!plugin_system::get_fun_pointer(test_name, &fun, &handle)){
 		error_callback(-5, "Failed to get function pointer");
 		return 1;
 	}

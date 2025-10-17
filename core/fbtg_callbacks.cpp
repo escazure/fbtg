@@ -8,35 +8,14 @@ void error_callback(int error, const char* description){
 }
 
 void key_callback(GLFWwindow* _window, int _key, int _scancode, int _action, int _mods){
-	if(_action == GLFW_PRESS){
-		if(_key == GLFW_KEY_W){
-			std::cout << "Pressed W\n";
-		}
-		if(_key == GLFW_KEY_A){
-			std::cout << "Pressed A\n";
-		}
-		if(_key == GLFW_KEY_S){
-			std::cout << "Pressed S\n";
-		}
-		if(_key == GLFW_KEY_D){
-			std::cout << "Pressed D\n";
-		}
+	if(_action == GLFW_RELEASE && _key == GLFW_KEY_ESCAPE){
+		std::cout << "Pressed ESC\n";
 	}
-
-	if(_action == GLFW_RELEASE){
-		if(_key == GLFW_KEY_W){
-			std::cout << "Pressed W\n";
-		}
-		if(_key == GLFW_KEY_A){
-			std::cout << "Pressed A\n";
-		}
-		if(_key == GLFW_KEY_S){
-			std::cout << "Pressed S\n";
-		}
-		if(_key == GLFW_KEY_D){
-			std::cout << "Pressed D\n";
-		}
-
+	if(_action == GLFW_RELEASE && _key == GLFW_KEY_P){
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	}
+	if(_action == GLFW_RELEASE && _key == GLFW_KEY_R){
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	}
 }
 
@@ -48,10 +27,10 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height){
 
     float aspect = (float)width / (float)height;
     if(aspect >= 1.0){
-        glOrtho(-aspect*FSF, aspect*FSF, -FSF, FSF, -FSF, FSF);
+        glOrtho(-aspect*FSF, aspect*FSF, -FSF, FSF, -FSF*10, FSF*10);
     }
     else{
-        glOrtho(-FSF, FSF, -FSF/aspect, FSF/aspect, -FSF, FSF);
+        glOrtho(-FSF, FSF, -FSF/aspect, FSF/aspect, -FSF*10, FSF*10);
     }
 
     glMatrixMode(GL_MODELVIEW);

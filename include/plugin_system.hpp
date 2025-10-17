@@ -3,7 +3,7 @@
 #include <dlfcn.h>
 #include <fstream>
 
-namespace escgen{
+namespace plugin_system{
 	struct Vertex{
 		float x, y, z;
 		float r, g, b;

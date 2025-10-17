@@ -1,9 +1,9 @@
-#include "escgen.hpp"
+#include "plugin_system.hpp"
 
-escgen::Vertex::Vertex(float _x,float _y,float _z,float _r,float _g,float _b): 
+plugin_system::Vertex::Vertex(float _x,float _y,float _z,float _r,float _g,float _b): 
 x(_x), y(_y), z(_z), r(_r), g(_g), b(_b){}
 
-bool escgen::write_fun(const std::string& _fun, const std::string& _name){
+bool plugin_system::write_fun(const std::string& _fun, const std::string& _name){
 	std::ofstream out("functions/" + _name + ".cpp");
 	if(!out.good()){
 		return false;
@@ -13,7 +13,7 @@ bool escgen::write_fun(const std::string& _fun, const std::string& _name){
 	return true;
 }
 
-bool escgen::compile_fun(const std::string& _name){
+bool plugin_system::compile_fun(const std::string& _name){
 	std::string cmd = "g++ -shared -fPIC -O2 ./functions/" + _name + ".cpp -o ./functions/" + _name;
 	int result = std::system(cmd.c_str());
 	if(result != 0){
@@ -22,7 +22,7 @@ bool escgen::compile_fun(const std::string& _name){
 	return true;
 }
 
-bool escgen::get_fun_pointer(const std::string& _name, float (**_fun)(float,float), void** _handle){
+bool plugin_system::get_fun_pointer(const std::string& _name, float (**_fun)(float,float), void** _handle){
 	void* handle = dlopen(("./functions/"+_name).c_str(), RTLD_LAZY);
 	if(!handle){
 		return false;

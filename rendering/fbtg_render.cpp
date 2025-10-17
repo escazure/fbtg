@@ -1,12 +1,12 @@
 #include "fbtg_render.h"
 
-std::vector<escgen::Vertex> temp_gen(std::size_t _width, std::size_t _length, float(**_fun)(float,float)){
-	std::vector<escgen::Vertex> t;
+std::vector<plugin_system::Vertex> temp_gen(std::size_t _width, std::size_t _length, float(**_fun)(float,float)){
+	std::vector<plugin_system::Vertex> t;
 	t.reserve(_width * _length);
 	for(std::size_t i = 1; i < _width+1; i++){
 		for(std::size_t j = 1; j < _length+1; j++){
 			float height = (*_fun)(j,i);
-			t.emplace_back(escgen::Vertex(i,j,height,0,0,0));	
+			t.emplace_back(plugin_system::Vertex(i,j,height,0,0,0));	
 		}
 	}
 	float max = 0.0, min = 0.0;
@@ -22,7 +22,7 @@ std::vector<escgen::Vertex> temp_gen(std::size_t _width, std::size_t _length, fl
 	return t;
 }
 
-void render_triangle(escgen::Vertex& _a, escgen::Vertex& _b, escgen::Vertex& _c){
+void render_triangle(plugin_system::Vertex& _a, plugin_system::Vertex& _b, plugin_system::Vertex& _c){
 	glBegin(GL_TRIANGLES);
 	glColor3f(_a.r, _a.g, _a.b);
 	glVertex3f(_a.x, _a.y, _a.z);
@@ -35,7 +35,7 @@ void render_triangle(escgen::Vertex& _a, escgen::Vertex& _b, escgen::Vertex& _c)
 	glEnd();
 }
 
-void render_buffer(std::vector<escgen::Vertex>& _tbuffer, std::size_t width, std::size_t length){
+void render_buffer(std::vector<plugin_system::Vertex>& _tbuffer, std::size_t width, std::size_t length){
 	if(_tbuffer.size() < 4){
 		return ;
 	}
