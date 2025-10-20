@@ -16,4 +16,4 @@ Planned features:
 To compile enter this command:
 make ; make clean ; build/fbtg
 
-Current version requires having 'functions' directory in directory from which you are calling executable
+Current version requires having 'functions' directory in build and calling executable from build, because shaders location is hardcoded
