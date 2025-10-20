@@ -5,7 +5,6 @@
 #include "fbtg_gen.h"
 #include "input.h"
 
-std::vector<plugin_system::Vertex> t_buffer;
 std::size_t width = 32, length = 32;
 
 std::vector<float> vertices = generator::temp_gen(width, length);
@@ -42,7 +41,7 @@ GLFWwindow* init_subsystems(){
 	glfwSetKeyCallback(window, key_callback);
     framebuffer_size_callback(window, w, h);
 
-	render_module::init(vertices);
+	render_module::init(vertices, width, length);
 
 	return window;	
 }
@@ -96,6 +95,10 @@ int main(){
 		error_callback(-5, "Failed to get function pointer");
 		return 1;
 	}
+	
+	/*
+	 	Here will be temporary evaluator for vertices
+	 */
 
     //parse_config();
     run(window);

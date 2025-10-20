@@ -2,7 +2,14 @@
 
 GLuint render_module::vao , render_module::vbo, render_module::vert_shader, render_module::frag_shader, render_module::shader_program;
 
-void render_module::init(const std::vector<float>& vertices){
+std::size_t render_module::vertex_count = 0;
+std::size_t render_module:: data_width = 0, render_module::data_length = 0;
+
+void render_module::init(const std::vector<float>& vertices, std::size_t width, std::size_t length){
+	render_module::vertex_count = vertices.size();
+	render_module::data_width = width;
+	render_module::data_length = length;
+
 	glGenVertexArrays(1, &render_module::vao);
 	glBindVertexArray(render_module::vao);
 	
@@ -19,7 +26,7 @@ void render_module::init(const std::vector<float>& vertices){
 
 void render_module::render(){
 	render_module::use();
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawArrays(GL_TRIANGLES, 0, render_module::vertex_count);
 }
 
 void render_module::clean(){
@@ -84,5 +91,7 @@ void render_module::create_program(const std::string& vert_path, const std::stri
 
 void render_module::use(){
 	glUseProgram(render_module::shader_program);
+	GLint scale_location = glGetUniformLocation(render_module::shader_program, "uScale");
+	glUniform2f(scale_location, 2.0f/render_module::data_width, 2.0f/render_module::data_length);
 	glBindVertexArray(render_module::vao);
 }
