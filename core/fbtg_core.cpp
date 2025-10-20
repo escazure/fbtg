@@ -7,6 +7,12 @@
 std::vector<plugin_system::Vertex> t_buffer;
 std::size_t width = 32, length = 32;
 
+std::vector<float> vertices = {
+	-0.5f, 0.0f, 0,
+	0.0f, 1.0f, 0,
+	0.5f, 0.0f, 0
+};
+
 GLFWwindow* init_subsystems(){
     glfwSetErrorCallback(error_callback);
 
@@ -14,6 +20,11 @@ GLFWwindow* init_subsystems(){
         std::cout << "Failed to init glfw\n";
     }
 
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);
+	//glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_COMPAT_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);
+	
     GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
@@ -24,17 +35,25 @@ GLFWwindow* init_subsystems(){
 
     glfwMakeContextCurrent(window);
 
+	if(gl3wInit() != 0) {
+		std::cout << "Failed to init gl3w\n";
+		return 0;
+	}
+
     int w, h;
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glfwSetKeyCallback(window, key_callback);
     framebuffer_size_callback(window, w, h);
+
+	render_module::init(vertices);
+
 	return window;	
 }
 
 void run(GLFWwindow* _window){
 	while(!glfwWindowShouldClose(_window)){
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		render_buffer(t_buffer, width, length);
+		render_module::render();
 		glfwSwapBuffers(_window);
 		glfwPollEvents();
 		Input::update(_window);
@@ -51,6 +70,10 @@ void shutdown(void** _handle, GLFWwindow* _window){
 
 int main(){  
     GLFWwindow* window = init_subsystems();
+	if(!window){
+		std::cout << "Something during initialization gone wrong, see logs\n";
+		return -1;
+	}
 
 	std::string test_fun, test_name;
 	std::cout << "Provide function: \n";
@@ -77,7 +100,6 @@ int main(){
 		return 1;
 	}
 
-	t_buffer = temp_gen(width, length, &fun);
     //parse_config();
     run(window);
     shutdown(&handle, window);

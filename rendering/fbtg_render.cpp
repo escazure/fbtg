@@ -1,53 +1,88 @@
 #include "fbtg_render.h"
 
-std::vector<plugin_system::Vertex> temp_gen(std::size_t _width, std::size_t _length, float(**_fun)(float,float)){
-	std::vector<plugin_system::Vertex> t;
-	t.reserve(_width * _length);
-	for(std::size_t i = 1; i < _width+1; i++){
-		for(std::size_t j = 1; j < _length+1; j++){
-			float height = (*_fun)(j,i);
-			t.emplace_back(plugin_system::Vertex(i,j,height,0,0,0));	
-		}
-	}
-	float max = 0.0, min = 0.0;
-	for(std::size_t i = 0; i < _width * _length; i++){
-		if(max < t[i].z) max = t[i].z;
-		if(min > t[i].z) min = t[i].z;
-	}	
-	for(std::size_t i = 0; i < _width * _length; i++){
-		t[i].r = (t[i].z - min) / (max - min);
-		t[i].g = t[i].r;
-		t[i].b = t[i].r;
-	}
-	return t;
-}
+GLuint render_module::vao , render_module::vbo, render_module::vert_shader, render_module::frag_shader, render_module::shader_program;
 
-void render_triangle(plugin_system::Vertex& _a, plugin_system::Vertex& _b, plugin_system::Vertex& _c){
-	glBegin(GL_TRIANGLES);
-	glColor3f(_a.r, _a.g, _a.b);
-	glVertex3f(_a.x, _a.y, _a.z);
+void render_module::init(const std::vector<float>& vertices){
+	glGenVertexArrays(1, &render_module::vao);
+	glBindVertexArray(render_module::vao);
 	
-	glColor3f(_b.r, _b.g, _b.b);
-	glVertex3f(_b.x, _b.y, _b.z);
+	glGenBuffers(1, &render_module::vbo);
+	glBindBuffer(GL_ARRAY_BUFFER, render_module::vbo);
 
-	glColor3f(_c.r, _c.g, _c.b);
-	glVertex3f(_c.x, _c.y, _c.z);
-	glEnd();
+	glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	render_module::create_program("../shaders/vert_shader.glsl", "../shaders/frag_shader.glsl");
 }
 
-void render_buffer(std::vector<plugin_system::Vertex>& _tbuffer, std::size_t width, std::size_t length){
-	if(_tbuffer.size() < 4){
-		return ;
-	}
-	for(std::size_t x = 0; x < width - 1; x++){
-		for(std::size_t y = 0; y < length-1; y++){
-			int i00 = x*length+y;
-			int i10 = (x+1)*length+y;
-			int i01 = x*length+(y+1);
-			int i11 = (x+1)*length+(y+1);
+void render_module::render(){
+	render_module::use();
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+}
 
-			render_triangle(_tbuffer[i00], _tbuffer[i10], _tbuffer[i01]);
-			render_triangle(_tbuffer[i10], _tbuffer[i11], _tbuffer[i01]);
+void render_module::clean(){
+	glDeleteShader(render_module::vert_shader);
+	glDeleteShader(render_module::frag_shader);
+}
+
+void render_module::load_from_file(const std::string& path, GLenum type){
+	std::ifstream file(path.c_str());	
+	std::stringstream ss;
+	ss << file.rdbuf();
+	std::string temp = ss.str();
+	const char* shader = temp.c_str();
+
+	int success;
+	char info_log[512];
+
+	if(type == GL_VERTEX_SHADER){
+		render_module::vert_shader = glCreateShader(GL_VERTEX_SHADER);
+		glShaderSource(render_module::vert_shader, 1, &shader, NULL);
+		glCompileShader(render_module::vert_shader);
+
+		glGetShaderiv(render_module::vert_shader, GL_COMPILE_STATUS, &success);
+		if(!success){
+			glGetShaderInfoLog(render_module::vert_shader, 512, NULL, info_log);
+			std::cout << "ERROR: vertex shader compilation failed:\n" << info_log << std::endl;
 		}
 	}
+	
+	if(type == GL_FRAGMENT_SHADER){
+		render_module::frag_shader = glCreateShader(GL_FRAGMENT_SHADER);
+		glShaderSource(render_module::frag_shader, 1, &shader, NULL);
+		glCompileShader(render_module::frag_shader);
+
+		glGetShaderiv(render_module::frag_shader, GL_COMPILE_STATUS, &success);
+		if(!success){
+			glGetShaderInfoLog(render_module::frag_shader, 512, NULL, info_log);
+			std::cout << "ERROR: fragment shader compilation failed:\n" << info_log<< std::endl;
+		}
+	}
+}
+
+void render_module::create_program(const std::string& vert_path, const std::string& frag_path){
+	load_from_file(vert_path, GL_VERTEX_SHADER);
+	load_from_file(frag_path, GL_FRAGMENT_SHADER);
+	render_module::shader_program = glCreateProgram();
+
+	glAttachShader(render_module::shader_program, render_module::vert_shader);
+	glAttachShader(render_module::shader_program, render_module::frag_shader);
+	glLinkProgram(render_module::shader_program);
+
+	int success;
+	char info_log[512];
+	glGetProgramiv(render_module::shader_program, GL_LINK_STATUS, &success);
+	if(!success){
+		glGetProgramInfoLog(render_module::shader_program, 512, NULL, info_log);
+		std::cout << "ERROR: failed to link shaders:\n" << info_log << std::endl;
+	}
+
+	render_module::clean();
+}
+
+void render_module::use(){
+	glUseProgram(render_module::shader_program);
+	glBindVertexArray(render_module::vao);
 }

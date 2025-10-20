@@ -1,8 +1,9 @@
 #pragma once
 
+#include "../libs/gl3w.h"
+#include <GLFW/glfw3.h>
 #include <iostream>
 #include <dlfcn.h>
-#include <GLFW/glfw3.h>
 #include <cmath>
 #include <vector>
 #define _GLFW_WAYLAND

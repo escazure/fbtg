@@ -1,14 +1,36 @@
 #!/bin/bash
+
+# Compilers
+CC = gcc
 CXX = g++
+
+# Flags
+CFLAGS = -Ilibs
 CXXFLAGS = -std=c++17 -Iinclude  
 LDFLAGS = -lglfw -lGL -ldl -lpthread -lwayland-client
 
-SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp core/input.cpp rendering/fbtg_render.cpp etc/plugin_system.cpp
-OBJ = $(SRC:.cpp=.o)
+# Source and object files
+C_SRC = libs/gl3w.c
+CPP_SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp core/input.cpp rendering/fbtg_render.cpp etc/plugin_system.cpp
 
-fbtg: $(OBJ)
-	$(CXX) $(OBJ) -o build/fbtg $(LDFLAGS)
+C_OBJS = $(C_SRC:.c=.o)
+CPP_OBJS = $(CPP_SRC:.cpp=.o)
+OBJS = $(C_OBJS) $(CPP_OBJS)
 
+# Target
+TARGET = fbtg
+
+# Build rules
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CXX) $(OBJS) -o build/fbtg $(LDFLAGS)
+
+# Compile C src
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Compile C++ src
 core/%.o: core/%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
@@ -21,4 +43,4 @@ etc/%.o: etc/%.cpp
 .PHONY: clean
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJS)
