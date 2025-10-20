@@ -2,16 +2,13 @@
 #include "fbtg_callbacks.h"
 #include "fbtg_render.h"
 #include "plugin_system.hpp"
+#include "fbtg_gen.h"
 #include "input.h"
 
 std::vector<plugin_system::Vertex> t_buffer;
 std::size_t width = 32, length = 32;
 
-std::vector<float> vertices = {
-	-0.5f, 0.0f, 0,
-	0.0f, 1.0f, 0,
-	0.5f, 0.0f, 0
-};
+std::vector<float> vertices = generator::temp_gen(width, length);
 
 GLFWwindow* init_subsystems(){
     glfwSetErrorCallback(error_callback);

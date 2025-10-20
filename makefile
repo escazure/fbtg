@@ -11,7 +11,7 @@ LDFLAGS = -lglfw -lGL -ldl -lpthread -lwayland-client
 
 # Source and object files
 C_SRC = libs/gl3w.c
-CPP_SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp core/input.cpp rendering/fbtg_render.cpp etc/plugin_system.cpp
+CPP_SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp core/input.cpp rendering/fbtg_render.cpp etc/plugin_system.cpp etc/fbtg_gen.cpp
 
 C_OBJS = $(C_SRC:.c=.o)
 CPP_OBJS = $(CPP_SRC:.cpp=.o)
