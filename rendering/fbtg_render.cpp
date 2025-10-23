@@ -21,7 +21,7 @@ void render_module::init(const std::vector<float>& vertices, std::size_t width, 
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
-	render_module::create_program("../shaders/vert_shader.glsl", "../shaders/frag_shader.glsl");
+	render_module::create_program("shaders/vert_shader.glsl", "shaders/frag_shader.glsl");
 }
 
 void render_module::render(){

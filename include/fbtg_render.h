@@ -5,7 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
-#include "../libs/gl3w.h"
+#include "../external/gl3w.h"
 #include <GLFW/glfw3.h>
 
 namespace render_module {

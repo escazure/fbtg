@@ -3,7 +3,7 @@
 
 Uses:
 - GLFW for window management
-- GL3W for function loading
+- GL3W for OpenGL function loading
 - OpenGL for rendering
 
 Planned features: 
@@ -14,6 +14,9 @@ Planned features:
 - Statistics
 
 To compile enter this command:
-make ; make clean ; build/fbtg
+make ; make clean 
 
-Current version requires having 'functions' directory in build and calling executable from build, because shaders location is hardcoded
+Currently works on Linux.
+
+Current version requires having 'functions' and 'shaders' directorys in same directory where executable is.
+

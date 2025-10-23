@@ -5,12 +5,12 @@ CC = gcc
 CXX = g++
 
 # Flags
-CFLAGS = -Ilibs
+CFLAGS = -Iexternal
 CXXFLAGS = -std=c++17 -Iinclude  
-LDFLAGS = -lglfw -lGL -ldl -lpthread -lwayland-client
+LDFLAGS = -lglfw -lGL -ldl 
 
 # Source and object files
-C_SRC = libs/gl3w.c
+C_SRC = external/gl3w.c
 CPP_SRC = core/fbtg_core.cpp core/fbtg_callbacks.cpp core/input.cpp rendering/fbtg_render.cpp etc/plugin_system.cpp etc/fbtg_gen.cpp
 
 C_OBJS = $(C_SRC:.c=.o)
@@ -24,7 +24,7 @@ TARGET = fbtg
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) $(OBJS) -o build/fbtg $(LDFLAGS)
+	$(CXX) $(OBJS) -o fbtg $(LDFLAGS)
 
 # Compile C src
 %.o: %.c
