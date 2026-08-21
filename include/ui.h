@@ -50,6 +50,8 @@ namespace UI{
 		    state.show_import_dialog = false;
 		}
 
+		static float imported_min_height = 0.0f;
+		static float imported_max_height = 0.0f;
 		if(ImGui::BeginPopupModal("Import Heightmap", NULL, ImGuiWindowFlags_AlwaysAutoResize)){
 			ImGui::Text("Enter PNG file path to import:");
 		    ImGui::InputText("##ImportPath", state.import_path_buffer, IM_ARRAYSIZE(state.import_path_buffer));
@@ -60,16 +62,18 @@ namespace UI{
 
 				ImGui::Text("Min Height:");
 				ImGui::SameLine();
-				ImGui::InputFloat("##ImportMinHeight", &state.min_height, -10000.0, 10000.0);
+				ImGui::InputFloat("##ImportMinHeight", &imported_min_height, -10000.0, 10000.0);
 
 				ImGui::Text("Max Height:");
 				ImGui::SameLine();
-				ImGui::InputFloat("##ImportMaxHeight", &state.max_height, -10000.0, 10000.0);
+				ImGui::InputFloat("##ImportMaxHeight", &imported_max_height, -10000.0, 10000.0);
 			}
 
 			ImGui::Separator();
 
 		    if(ImGui::Button("Import", ImVec2(120, 0))){
+				state.min_height = imported_min_height;
+				state.max_height = imported_max_height;
         		importTexture(std::string(state.import_path_buffer), state.heightMap, state.height_map_min_max_imported);
 				state.height_map_imported = true;
 				state.size = state.heightMap->_width;

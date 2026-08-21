@@ -318,6 +318,13 @@ void importTexture(const std::string& path, Texture*& texture, bool scaleHeight)
 
 	bitDepth = pngState.info_png.color.bitdepth;
 
+	if(state.logging){
+		std::cout << "Importing a Heightmap:\n";
+		std::cout << "Width: " << width << "\n";
+		std::cout << "Height: " << height << "\n";
+		std::cout << "Bits per channel: " << bitDepth << "\n";
+	}
+
 	std::vector<float> floatData(width * height);
 
 	if(bitDepth == 16){
