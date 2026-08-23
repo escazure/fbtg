@@ -198,7 +198,7 @@ float example(vec2 uv, float baseFrequency, float baseAmplitude, float erosionSt
 
 /*** USER DEFINED FUNCTION BEGIN ***/
 float example_terrain(){
-return example(worldPos, 0.0003, 2200.0, 2.7, 8);
+return worldPos.x * 0.05;
 }
 /*** USER DEFINED FUNCTION END ***/
 

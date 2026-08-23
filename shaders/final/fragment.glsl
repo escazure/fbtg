@@ -8,17 +8,19 @@ out vec4 FragColor;
 
 uniform bool uShowNormals;
 uniform bool uCalculateLighting;
+uniform bool uRenderWaterPlane;
 
 uniform int uTextureMethod;
 uniform float uChunkSize;
 uniform float uMinHeight;
 uniform float uMaxHeight;
+uniform float uWaterLevel;
 
 uniform vec3 uLightDir;
 const vec3 up = vec3(0.0, 1.0, 0.0);
 const vec3 lightCol = vec3(1.0);
 
-const float sandLevel = 50.0;
+const float sandLevel = 0.0;
 const float grassLevel = 250.0;
 const float rockLevel = 350.0;
 const float snowLevel = 420.0;
@@ -72,9 +74,15 @@ vec3 textureTerrainDefault(float slope){
     float noiseLarge  = perlinNoise(wp * 0.005);
     float noiseDetail = perlinNoise(wp * 0.02);
     float combinedNoise = noiseLarge * 0.7 + noiseDetail * 0.3;
-    float warpedY = WorldPos.y + noiseLarge * 100.0 + noiseDetail * 50.0;
 
-	float grassWeight = smoothstep(sandLevel, sandLevel + 70.0, warpedY);
+	float sandBase = uRenderWaterPlane ? uWaterLevel : sandLevel;
+	float heightAboveWater = WorldPos.y - sandBase;
+
+	float beachWobble = (perlinNoise(wp * 0.02) - 0.5) * 8.0;
+    float beachHeight = heightAboveWater + beachWobble;
+	float grassWeight = smoothstep(-3.0, 10.0, beachHeight);
+
+    float warpedY = WorldPos.y + (noiseLarge - 0.5) * 40.0 + (noiseDetail - 0.5) * 20.0;
     float rockWeight = smoothstep(rockLevel, rockLevel + 40.0, warpedY);
     float snowWeight = smoothstep(snowLevel, snowLevel + 30.0, warpedY);
     float cliffFactor = smoothstep(0.4, 0.6, slope);
