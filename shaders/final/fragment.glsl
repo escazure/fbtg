@@ -18,7 +18,7 @@ uniform vec3 uLightDir;
 const vec3 up = vec3(0.0, 1.0, 0.0);
 const vec3 lightCol = vec3(1.0);
 
-const float sandLevel = -20.0;
+const float sandLevel = 50.0;
 const float grassLevel = 250.0;
 const float rockLevel = 350.0;
 const float snowLevel = 420.0;
@@ -74,7 +74,7 @@ vec3 textureTerrainDefault(float slope){
     float combinedNoise = noiseLarge * 0.7 + noiseDetail * 0.3;
     float warpedY = WorldPos.y + noiseLarge * 100.0 + noiseDetail * 50.0;
 
-	float grassWeight = smoothstep(sandLevel, sandLevel + 20.0, warpedY);
+	float grassWeight = smoothstep(sandLevel, sandLevel + 70.0, warpedY);
     float rockWeight = smoothstep(rockLevel, rockLevel + 40.0, warpedY);
     float snowWeight = smoothstep(snowLevel, snowLevel + 30.0, warpedY);
     float cliffFactor = smoothstep(0.4, 0.6, slope);

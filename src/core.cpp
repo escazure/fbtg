@@ -8,10 +8,11 @@ Terrain* terrain;
 Texture heightMap;
 Texture normalMap;
 Texture shadowMap;
+Texture reflectionMap, reflectionDepth;
 
 Sampler linearClamp;
 
-unsigned int shadowMapFBO;
+unsigned int shadowMapFBO, reflectionFBO;
 
 GLFWwindow* init(){
 	if(state.logging) std::cout << "Logging enabled\n";
@@ -54,11 +55,17 @@ GLFWwindow* init(){
 	heightMap.create(GL_TEXTURE_2D, 1, GL_R32F, 1024, 1024);
 	normalMap.create(GL_TEXTURE_2D, 1, GL_RGBA32F, 1024, 1024);
 	shadowMap.create(GL_TEXTURE_2D, 1, GL_R32F, 1024, 1024);
+	reflectionMap.create(GL_TEXTURE_2D, 1, GL_RGBA8, mode->width, mode->height);
+	reflectionDepth.create(GL_TEXTURE_2D, 1, GL_DEPTH_COMPONENT32F, mode->width, mode->height);
 
 	state.heightMap = &heightMap;
 
 	glCreateFramebuffers(1, &shadowMapFBO);
 	shadowMap.attach(shadowMapFBO, GL_COLOR_ATTACHMENT0);
+
+	glCreateFramebuffers(1, &reflectionFBO);
+	reflectionMap.attach(reflectionFBO, GL_COLOR_ATTACHMENT0);
+	reflectionDepth.attach(reflectionFBO, GL_DEPTH_ATTACHMENT);
 
 	state.camera = &camera;
 	state.terrain = terrain;
@@ -94,6 +101,7 @@ void run(GLFWwindow* window){
 	Shader skybox_shader("skybox/skybox_vertex.glsl", "skybox/skybox_fragment.glsl");
 	Shader normal_map_shader("normalMapping/normal_map.comp");
 	Shader shadow_map_shader("shadowMapping/shadow_map_vertex.glsl", "shadowMapping/shadow_map_fragment.glsl");
+	Shader water_plane_shader("waterPlane/vertex.glsl", "waterPlane/fragment.glsl");
 	Shader min_max_compute_shader("minMaxComp/min_max.comp");
 
 	if(state.logging){
@@ -103,17 +111,19 @@ void run(GLFWwindow* window){
 		std::cout << " Normal Map - " << normal_map_shader.id << "\n";
 		std::cout << " Shadow Map - " << shadow_map_shader.id << "\n";
 		std::cout << " Min Max Compute - " << min_max_compute_shader.id << "\n";
+		std::cout << " Water Plane - " << water_plane_shader.id << "\n";
 	}
 
 	std::array<Timer, TIMER_COUNT> timers = {
 		Timer("Height Map"),
 		Timer("Min Max"),
 		Timer("Normal Map"),
-		Timer("Shadow Map")
+		Timer("Shadow Map"),
 	};
 
 	unsigned int barrier = GL_SHADER_IMAGE_ACCESS_BARRIER_BIT | GL_TEXTURE_FETCH_BARRIER_BIT;
 
+	const float clearColor[4] = { 0.0f, 0.0f, 0.0f, 0.0f };
 	const float skyClearColor[4] = {0.2f, 0.6f, 0.8f, 1.0f};
 	const float shadowClearColor[4] = {0.0f, 0.0f, 0.0f, 1.0f};
 	const float depthClearColor = 1.0f;
@@ -218,6 +228,7 @@ void run(GLFWwindow* window){
 			timers[SHADOW_MAP_ID].begin();
 			render_quad();	
 			timers[SHADOW_MAP_ID].end();
+
 			if(state.logging) std::cout << "Done\n";
 
 			glBindFramebuffer(GL_FRAMEBUFFER, 0);
@@ -228,9 +239,41 @@ void run(GLFWwindow* window){
 			if(state.is_wireframe_mode) glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		}
 
-		if(state.terrain_generated){
-			if(state.cull_backface) glEnable(GL_CULL_FACE);
+		if(state.terrain_generated && state.render_water_plane){
+			glBindFramebuffer(GL_FRAMEBUFFER, reflectionFBO);
+			glViewport(0, 0, int(state.window_width), int(state.window_height));
 
+			glClearNamedFramebufferfv(reflectionFBO, GL_COLOR, 0, clearColor);
+			glClearNamedFramebufferfv(reflectionFBO, GL_DEPTH, 0, &depthClearColor);
+			
+			heightMap.bind(0);
+			normalMap.bind(1);
+			shadowMap.bind(2);
+
+			linearClamp.bind(0);
+			linearClamp.bind(1);
+			linearClamp.bind(2);
+
+			if(state.cull_backface){
+				glEnable(GL_CULL_FACE);
+				glCullFace(GL_FRONT);
+			}
+
+			glm::mat4 view = state.camera->getViewMat();
+			glm::mat4 reflection = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, state.water_plane_level, 0.0f));
+			reflection = glm::scale(reflection, glm::vec3(1.0f, -1.0f, 1.0f));
+			reflection = glm::translate(reflection, glm::vec3(0.0f, -state.water_plane_level, 0.0f));
+			glm::mat4 reflectedView = view * reflection;
+
+			glm::vec4 clipPlaneAbove = glm::vec4(0.0f, 1.0f, 0.0f, -state.water_plane_level);
+			glEnable(GL_CLIP_DISTANCE0);
+			render_terrain(shader, lightDir, reflectedView, clipPlaneAbove);
+			glDisable(GL_CLIP_DISTANCE0);
+
+			if(state.cull_backface) glCullFace(GL_BACK);
+		}
+
+		if(state.terrain_generated){
 			glBindFramebuffer(GL_FRAMEBUFFER, 0);
 			glViewport(0, 0, int(state.window_width), int(state.window_height));
 
@@ -242,27 +285,16 @@ void run(GLFWwindow* window){
 			linearClamp.bind(1);
 			linearClamp.bind(2);
 
-			shader.use();
-			shader.set_float("uTerrainSize", state.size);
-			shader.set_float("uChunkSize", state.chunk_size);
-			shader.set_float("uMinHeight", state.min_height);
-			shader.set_float("uMaxHeight", state.max_height);
-			shader.set_int("uTextureMethod", state.texture_method);
-			shader.set_bool("uRenderTerrainSkirt", state.render_terrain_skirt);
-			shader.set_bool("uShowNormals", state.show_normals);
-			shader.set_bool("uCalculateLighting", state.calculate_lighting);
-			shader.set_vec3("uLightDir", lightDir);
-
-			glm::mat4 model(1.0f);
-			shader.set_mat4("uModel", model);
-			
 			glm::mat4 view = state.camera->getViewMat();
-			shader.set_mat4("uView", view);
 
-			glm::mat4 projection = glm::perspective(glm::radians(45.0f), state.window_width/state.window_height, 0.1f, state.camera->_viewDistance);
-			shader.set_mat4("uProjection", projection);
+			render_terrain(shader, lightDir, view);
+		}
 
-			state.terrain->draw();
+		if(state.terrain_generated && state.render_water_plane){
+			reflectionMap.bind(0);
+			linearClamp.bind(0);
+
+			render_water_plane(state.size, state.water_plane_level, water_plane_shader, lightDir);
 		}
 
 		if(state.render_skybox){
@@ -270,7 +302,9 @@ void run(GLFWwindow* window){
 			glDepthMask(GL_FALSE); 
 			glDepthFunc(GL_LEQUAL);
 			glDisable(GL_CULL_FACE);
+
 			render_skybox(skybox_shader, lightDir);
+
 			glDepthMask(GL_TRUE); 
 			glDepthFunc(GL_LESS);
 		}

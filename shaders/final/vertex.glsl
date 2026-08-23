@@ -12,6 +12,7 @@ uniform mat4 uProjection;
 uniform float uTerrainSize;
 uniform bool uRenderTerrainSkirt;
 uniform bool uApplyErosionMask;
+uniform vec4 uClipPlane;
 
 void main(){
 	uv = (aPos + vec2(uTerrainSize * 0.5)) / uTerrainSize;
@@ -28,6 +29,9 @@ void main(){
 	}
 
 	vec4 worldPos = uModel * vec4(aPos.x, height, aPos.y, 1.0);
+
+	gl_ClipDistance[0] = dot(worldPos, uClipPlane);
+
 	WorldPos = vec3(worldPos);
 	gl_Position = uProjection * uView * worldPos;
 }

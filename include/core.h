@@ -21,6 +21,9 @@
 #include <vector>
 #include <array>
 
+#define MIN_WATER_PLANE_LEVEL -200.0
+#define MAX_WATER_PLANE_LEVEL 200.0
+
 extern AppState state;
 
 GLFWwindow* init();

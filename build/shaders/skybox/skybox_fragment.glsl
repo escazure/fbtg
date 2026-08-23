@@ -16,8 +16,7 @@ float getSunMask(float angularDist, float outerEdgeDeg, float innerEdgeDeg){
 	return smoothstep(outerEdge, innerEdge, angularDist);
 }
 
-void main(){
-	vec3 color = lightSkyBlue;
+vec3 getSkyColor(){
 	vec3 fragToLight = normalize(-uLightDir);
 	vec3 viewDir = normalize(worldPos);
 
@@ -34,7 +33,11 @@ void main(){
 
 	float sunMask = getSunMask(angularDist, 1.0, 0.6);
 
-	color = mix(skyWithGlow, sunColor, sunMask);
+	return mix(skyWithGlow, sunColor, sunMask);
+}
+
+void main(){
+	vec3 color = getSkyColor();
 
 	FragColor = vec4(color, 1.0);
 }

@@ -1,8 +1,12 @@
 #version 460 core
+layout (binding = 0) uniform sampler2D uReflectionMap;
 layout (location = 0) out vec4 FragColor;
 
+in vec2 uv;
+in vec4 clipSpacePos;
 in vec3 worldPos;
 
+uniform vec3 uCameraPos;
 uniform vec3 uLightDir;
 
 const vec3 belowHorizon = vec3(150.0, 170.0, 225.0) / 255.0;
@@ -16,9 +20,8 @@ float getSunMask(float angularDist, float outerEdgeDeg, float innerEdgeDeg){
 	return smoothstep(outerEdge, innerEdge, angularDist);
 }
 
-vec3 getSkyColor(){
+vec3 getSkyColor(vec3 viewDir){
 	vec3 fragToLight = normalize(-uLightDir);
-	vec3 viewDir = normalize(worldPos);
 
 	float angularDist = dot(viewDir, fragToLight);
 
@@ -37,7 +40,15 @@ vec3 getSkyColor(){
 }
 
 void main(){
-	vec3 color = getSkyColor();
+	vec3 I = normalize(worldPos - uCameraPos);
+	vec3 N = vec3(0.0, 1.0, 0.0);
+	vec3 R = reflect(I, N);
+	vec3 skyColor = getSkyColor(R);
 
-	FragColor = vec4(color, 1.0);
+	vec2 ndc = (clipSpacePos.xy / clipSpacePos.w) * 0.5 + 0.5;
+	vec2 reflectUV = vec2(ndc.x, ndc.y);
+	vec4 terrainReflection = texture(uReflectionMap, reflectUV);
+
+	vec3 finalColor = mix(skyColor, terrainReflection.rgb, terrainReflection.a);
+	FragColor = vec4(finalColor, 1.0);
 }

@@ -32,6 +32,8 @@ struct AppState{
 	float min_height = 0.0f;
 	float max_height = 0.0f;
 
+	float water_plane_level = 0.0f;
+
 	int texture_method = 0;
 
     Terrain* terrain = nullptr;
@@ -47,6 +49,7 @@ struct AppState{
     bool is_wireframe_mode = false;
     bool cull_backface = true;
     bool render_skybox = true;
+    bool render_water_plane = true;
     bool show_normals = false;
     bool show_light_frustum = false;
     bool show_light_marker = false;

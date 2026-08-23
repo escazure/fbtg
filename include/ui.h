@@ -435,6 +435,10 @@ namespace UI{
                 ImGui::Checkbox("Backface Culling", &state.cull_backface);
                 ImGui::Checkbox("Render Skybox Environment", &state.render_skybox);
                 ImGui::Checkbox("Render Terrain Skirt", &state.render_terrain_skirt);
+                ImGui::Checkbox("Render Water Plane", &state.render_water_plane);
+				if(state.render_water_plane){
+					ImGui::SliderFloat("##WaterPlaneLevel", &state.water_plane_level, MIN_WATER_PLANE_LEVEL, MAX_WATER_PLANE_LEVEL);
+				}
 
                 ImGui::Spacing();
                 ImGui::Separator();

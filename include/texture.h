@@ -57,6 +57,7 @@ public:
 
 		glCreateTextures(_target, 1, &_id);
 		pSpecifyTextureStorage();
+		pSpecifyTexturePixelFormat(_internalFormat);
 
 		_pPixelBuffer.resize(_width * _height * _channels);
 	}
@@ -99,6 +100,11 @@ private:
 
 	void pSpecifyTexturePixelFormat(unsigned int internalFormat){
 		switch(internalFormat){
+			case GL_DEPTH_COMPONENT32F:
+			case GL_DEPTH_COMPONENT24:
+				_pixelFormat = GL_DEPTH_COMPONENT;
+				_channels = 1;
+				break;
 			case GL_R32F:
 				_pixelFormat = GL_RED;
 				_channels = 1;
