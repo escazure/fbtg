@@ -438,6 +438,7 @@ namespace UI{
                 ImGui::Checkbox("Render Water Plane", &state.render_water_plane);
 				if(state.render_water_plane){
 					ImGui::SliderFloat("##WaterPlaneLevel", &state.water_plane_level, MIN_WATER_PLANE_LEVEL, MAX_WATER_PLANE_LEVEL);
+                	ImGui::Checkbox("Clip Terrain Below Water", &state.clip_terrain_below_water);
 				}
 
                 ImGui::Spacing();

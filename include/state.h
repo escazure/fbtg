@@ -54,6 +54,7 @@ struct AppState{
     bool show_light_frustum = false;
     bool show_light_marker = false;
 	bool render_terrain_skirt = false;
+	bool clip_terrain_below_water = false;
 	bool show_ui = true;
 	bool is_vsync = true;
 

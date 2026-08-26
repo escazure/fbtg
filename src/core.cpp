@@ -147,6 +147,8 @@ void run(GLFWwindow* window){
 
 		process_input(window, delta_time);
 
+		glm::vec4 clipPlaneBelow = glm::vec4(0.0f, 1.0f, 0.0f, -state.water_plane_level);
+
 		if(state.generate_terrain){
 			state.gen_time = 0.0f;
 			Shader height_map_shader("heightMap/height_map.comp");
@@ -265,9 +267,8 @@ void run(GLFWwindow* window){
 			reflection = glm::translate(reflection, glm::vec3(0.0f, -state.water_plane_level, 0.0f));
 			glm::mat4 reflectedView = view * reflection;
 
-			glm::vec4 clipPlaneAbove = glm::vec4(0.0f, 1.0f, 0.0f, -state.water_plane_level);
 			glEnable(GL_CLIP_DISTANCE0);
-			render_terrain(shader, lightDir, reflectedView, clipPlaneAbove);
+			render_terrain(shader, lightDir, reflectedView, clipPlaneBelow);
 			glDisable(GL_CLIP_DISTANCE0);
 
 			if(state.cull_backface) glCullFace(GL_BACK);
@@ -287,7 +288,10 @@ void run(GLFWwindow* window){
 
 			glm::mat4 view = state.camera->getViewMat();
 
-			render_terrain(shader, lightDir, view);
+			if(state.clip_terrain_below_water) 
+				glEnable(GL_CLIP_DISTANCE0);
+			render_terrain(shader, lightDir, view, state.clip_terrain_below_water ? clipPlaneBelow : glm::vec4(0.0f));
+			glDisable(GL_CLIP_DISTANCE0);
 		}
 
 		if(state.terrain_generated && state.render_water_plane){
