@@ -1,3 +1,5 @@
+const float ONE_OVER_SQRT_TWO = 1.0 / sqrt(2.0);
+
 float hash21(vec2 p){
     return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453123);
 }
@@ -125,7 +127,8 @@ float voronoiNoise(vec2 uv, float cellSize){
 		}
 	}
 
-	return minDist;
+	float normalizedDist = minDist * ONE_OVER_SQRT_TWO;
+	return clamp(normalizedDist, 0.0, 1.0);
 }
 
 float fbmVoronoi(vec2 uv, int octaves, float cellSize){

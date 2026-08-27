@@ -10,6 +10,8 @@ uniform int uSeed;
 vec2 uv;
 vec2 worldPos;
 
+const float ONE_OVER_SQRT_TWO = 1.0 / sqrt(2.0);
+
 float hash21(vec2 p){
     return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453123);
 }
@@ -137,7 +139,8 @@ float voronoiNoise(vec2 uv, float cellSize){
 		}
 	}
 
-	return minDist;
+	float normalizedDist = minDist * ONE_OVER_SQRT_TWO;
+	return clamp(normalizedDist, 0.0, 1.0);
 }
 
 float fbmVoronoi(vec2 uv, int octaves, float cellSize){
@@ -198,7 +201,8 @@ float example(vec2 uv, float baseFrequency, float baseAmplitude, float erosionSt
 
 /*** USER DEFINED FUNCTION BEGIN ***/
 float example_terrain(){
-return example(worldPos, 0.0003, 2200.0, 2.7, 8);
+float f = fbmVoronoi(uv, 4, 0.4);
+return pow(f, 4.0);
 }
 /*** USER DEFINED FUNCTION END ***/
 
