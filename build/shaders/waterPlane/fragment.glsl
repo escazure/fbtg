@@ -22,6 +22,28 @@ vec2 hash22(vec2 p){
     return fract(sin(p) * 43758.5453123);
 }
 
+float perlinNoise(vec2 uv){
+	vec2 i = floor(uv);
+	vec2 f = fract(uv);
+
+	vec2 gradA = hash22(i) * 2.0 - 1.0;
+	vec2 gradB = hash22(i + vec2(1.0, 0.0)) * 2.0 - 1.0;
+	vec2 gradC = hash22(i + vec2(0.0, 1.0)) * 2.0 - 1.0;
+	vec2 gradD = hash22(i + vec2(1.0, 1.0)) * 2.0 - 1.0;
+
+	float dotA = dot(gradA, f);
+	float dotB = dot(gradB, f - vec2(1.0, 0.0));
+	float dotC = dot(gradC, f - vec2(0.0, 1.0));
+	float dotD = dot(gradD, f - vec2(1.0, 1.0));
+
+	vec2 w = f * f * f * (f * (f * 6.0 - 15.0) + 10.0);
+
+	float u1 = mix(dotA, dotB, w.x);
+	float u2 = mix(dotC, dotD, w.x);
+
+	return mix(u1, u2, w.y);
+}
+
 float voronoiNoise(vec2 uv, float cellSize){
 	vec2 scaledUV = uv / cellSize;
 	vec2 baseCell = floor(scaledUV);
@@ -42,6 +64,31 @@ float voronoiNoise(vec2 uv, float cellSize){
 
 	return minDist;
 } 
+
+float waterNoise(vec2 uv, int octaves, float baseDistortion, float baseFrequency, float baseExponent){
+	float res = 0.0;
+	const vec2 offset = vec2(-3.5, 3.5);
+
+	float lacunarity = 2.15;
+	float gain = 0.51;
+	float exp_gain = 1.1;
+
+	float d = baseDistortion;
+	float f = baseFrequency;
+	float e = baseExponent;
+	for(int i = 0; i < octaves; i++){
+		vec2 suv = uv * f;
+	    float px = perlinNoise(suv) * d;
+		float py = perlinNoise(suv + offset) * d;
+	    float v = voronoiNoise(suv + vec2(px, py), 1.0);
+	    res += pow(v, e);
+	    f *= lacunarity;
+	    d *= gain;
+	    e *= exp_gain;
+	}
+
+	return res; 
+}
 
 float getSunMask(float angularDist, float outerEdgeDeg, float innerEdgeDeg){
 	float outerEdge = cos(radians(outerEdgeDeg));
@@ -68,6 +115,11 @@ vec3 getSkyColor(vec3 viewDir){
 	return mix(skyWithGlow, sunColor, sunMask);
 }
 
+vec3 getWaterColor(){
+	float waterPattern = waterNoise(uv, 3, 2.0, 30.0, 3.5); 
+	return mix(shallowWater, waterFoam, waterPattern);
+}
+
 void main(){
 	vec3 I = normalize(worldPos - uCameraPos);
 	vec3 N = vec3(0.0, 1.0, 0.0);
@@ -78,11 +130,7 @@ void main(){
 	vec2 reflectUV = vec2(ndc.x, ndc.y);
 	vec4 terrainReflection = texture(uReflectionMap, reflectUV);
 
-	float largeNoise = voronoiNoise(uv, 0.01);
-	float smallNoise = voronoiNoise(uv, 0.001);
-	vec3 largeWaterDetail = mix(shallowWater, waterFoam, largeNoise);
-	vec3 smallWaterDetail = mix(shallowWater, waterFoam, smallNoise);
-	vec3 waterColor = mix(largeWaterDetail, smallWaterDetail, 0.3);
+	vec3 waterColor = getWaterColor();
 
 	vec3 finalColor = mix(skyColor, terrainReflection.rgb, terrainReflection.a);
 	finalColor = mix(finalColor, waterColor, 0.1);

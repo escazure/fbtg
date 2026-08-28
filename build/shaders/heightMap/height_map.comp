@@ -201,8 +201,7 @@ float example(vec2 uv, float baseFrequency, float baseAmplitude, float erosionSt
 
 /*** USER DEFINED FUNCTION BEGIN ***/
 float example_terrain(){
-float f = fbmVoronoi(uv, 4, 0.4);
-return pow(f, 4.0);
+return example(worldPos, 0.0003, 2200.0, 2.7, 8);
 }
 /*** USER DEFINED FUNCTION END ***/
 
