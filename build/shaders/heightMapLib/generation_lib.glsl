@@ -1,12 +1,27 @@
 const float ONE_OVER_SQRT_TWO = 1.0 / sqrt(2.0);
 
 float hash21(vec2 p){
-    return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453123);
+	uvec2 v = floatBitsToUint(p);
+	v.x += 1664525u;
+	v ^= v.yx * 1664525u;
+	v *= 1664525u;
+	v ^= v >> 16u;
+
+	uint floatBits = (v.x * v.y & 0x007FFFFFu) | 0x3F800000u;
+	return uintBitsToFloat(floatBits) - 1.0;
 }
 
 vec2 hash22(vec2 p){
-    p = vec2(dot(p, vec2(127.1, 311.7)), dot(p, vec2(269.5, 183.3)));
-    return fract(sin(p) * 43758.5453123);
+	uvec2 v = floatBitsToUint(p);
+	v.x += 1664525u;
+	v ^= v.yx * 1664525u;
+	v *= 1664525u;
+	v ^= v >> 16u;
+	v ^ v.yx >> 5u;
+
+	uvec2 floatBits = (v & 0x007FFFFFu) | 0x3F800000u;
+	vec2 res = uintBitsToFloat(floatBits) - 1.0;
+	return res;
 }
 
 uint hashSeed(uint seed) {
@@ -59,10 +74,10 @@ float perlinNoise(vec2 uv){
 	vec2 i = floor(uv);
 	vec2 f = fract(uv);
 
-	vec2 gradA = hash22(i) * 2.0 - 1.0;
-	vec2 gradB = hash22(i + vec2(1.0, 0.0)) * 2.0 - 1.0;
-	vec2 gradC = hash22(i + vec2(0.0, 1.0)) * 2.0 - 1.0;
-	vec2 gradD = hash22(i + vec2(1.0, 1.0)) * 2.0 - 1.0;
+	vec2 gradA = normalize(hash22(i) * 2.0 - 1.0);
+	vec2 gradB = normalize(hash22(i + vec2(1.0, 0.0)) * 2.0 - 1.0);
+	vec2 gradC = normalize(hash22(i + vec2(0.0, 1.0)) * 2.0 - 1.0);
+	vec2 gradD = normalize(hash22(i + vec2(1.0, 1.0)) * 2.0 - 1.0);
 
 	float dotA = dot(gradA, f);
 	float dotB = dot(gradB, f - vec2(1.0, 0.0));
@@ -81,10 +96,10 @@ vec3 perlinNoiseDerivatives(vec2 uv){
 	vec2 i = floor(uv);
 	vec2 f = fract(uv);
 
-	vec2 gradA = hash22(i) * 2.0 - 1.0;
-	vec2 gradB = hash22(i + vec2(1.0, 0.0)) * 2.0 - 1.0;
-	vec2 gradC = hash22(i + vec2(0.0, 1.0)) * 2.0 - 1.0;
-	vec2 gradD = hash22(i + vec2(1.0, 1.0)) * 2.0 - 1.0;
+	vec2 gradA = normalize(hash22(i) * 2.0 - 1.0);
+	vec2 gradB = normalize(hash22(i + vec2(1.0, 0.0)) * 2.0 - 1.0);
+	vec2 gradC = normalize(hash22(i + vec2(0.0, 1.0)) * 2.0 - 1.0);
+	vec2 gradD = normalize(hash22(i + vec2(1.0, 1.0)) * 2.0 - 1.0);
 
 	float dotA = dot(gradA, f);
 	float dotB = dot(gradB, f - vec2(1.0, 0.0));

@@ -66,6 +66,7 @@ target_link_libraries(tgv PRIVATE
 	OpenGL::GL
 )
 
+target_compile_features(tgv PRIVATE cxx_std_23)
 target_compile_options(tgv PRIVATE -Wno-pragmas)
 target_compile_definitions(tgv PRIVATE 
 	PROJECT_INCLUDE_DIR="${CMAKE_SOURCE_DIR}/include"

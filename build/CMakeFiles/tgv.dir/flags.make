@@ -13,5 +13,5 @@ CXX_DEFINES = -DPROJECT_ASSET_DIR=\"/home/escazure/cpp_projects/tgv/assets\" -DP
 
 CXX_INCLUDES = -I/home/escazure/cpp_projects/tgv/include -I/home/escazure/cpp_projects/tgv/external -I/home/escazure/cpp_projects/tgv/external/imgui -I/home/escazure/cpp_projects/tgv/external/imgui/backends -I/home/escazure/cpp_projects/tgv/external/gl3w -I/home/escazure/cpp_projects/tgv/external/lodepng
 
-CXX_FLAGS = -Wno-pragmas
+CXX_FLAGS = -std=gnu++23 -Wno-pragmas
 

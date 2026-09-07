@@ -17,5 +17,7 @@ void build_shader(const std::string& udf, const std::string& udf_name, const std
 void getMinMaxHeight(Shader& shader, AppState& state, Texture &heightMap, unsigned int width, unsigned int height);
 void debugMessageCallback(unsigned int source, unsigned int type, unsigned int id, unsigned int severity, int length, const char *msg, const void *data);
 
+std::string getGLString(GLenum name);
+
 void exportTexture(const std::string& basePath, const Texture* texture, unsigned int bits);
 void importTexture(const std::string& path, Texture*& texture, bool scaleHeight);

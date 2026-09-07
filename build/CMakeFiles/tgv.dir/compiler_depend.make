@@ -325,15 +325,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o: /home/escazure/cpp_projects/tgv/e
   /usr/include/c++/14.2/bit \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
+  /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/functexcept.h \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/move.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/std_abs.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
+  /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
@@ -341,6 +345,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o: /home/escazure/cpp_projects/tgv/e
   /usr/include/c++/14.2/bits/utility.h \
   /usr/include/c++/14.2/bits/version.h \
   /usr/include/c++/14.2/cmath \
+  /usr/include/c++/14.2/compare \
   /usr/include/c++/14.2/concepts \
   /usr/include/c++/14.2/cstdlib \
   /usr/include/c++/14.2/debug/assertions.h \
@@ -349,6 +354,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o: /home/escazure/cpp_projects/tgv/e
   /usr/include/c++/14.2/ext/type_traits.h \
   /usr/include/c++/14.2/limits \
   /usr/include/c++/14.2/math.h \
+  /usr/include/c++/14.2/new \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/stdlib.h \
   /usr/include/c++/14.2/tr1/bessel_function.tcc \
@@ -568,15 +574,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o: /home/escazure/cpp_projects/
   /usr/include/c++/14.2/bit \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
+  /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/functexcept.h \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/move.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/std_abs.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
+  /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
@@ -584,6 +594,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o: /home/escazure/cpp_projects/
   /usr/include/c++/14.2/bits/utility.h \
   /usr/include/c++/14.2/bits/version.h \
   /usr/include/c++/14.2/cmath \
+  /usr/include/c++/14.2/compare \
   /usr/include/c++/14.2/concepts \
   /usr/include/c++/14.2/cstdlib \
   /usr/include/c++/14.2/debug/assertions.h \
@@ -592,6 +603,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o: /home/escazure/cpp_projects/
   /usr/include/c++/14.2/ext/type_traits.h \
   /usr/include/c++/14.2/limits \
   /usr/include/c++/14.2/math.h \
+  /usr/include/c++/14.2/new \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/stdlib.h \
   /usr/include/c++/14.2/tr1/bessel_function.tcc \
@@ -804,15 +816,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o: /home/escazure/cpp_project
   /usr/include/c++/14.2/bit \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
+  /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/functexcept.h \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/move.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/std_abs.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
+  /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
@@ -820,6 +836,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o: /home/escazure/cpp_project
   /usr/include/c++/14.2/bits/utility.h \
   /usr/include/c++/14.2/bits/version.h \
   /usr/include/c++/14.2/cmath \
+  /usr/include/c++/14.2/compare \
   /usr/include/c++/14.2/concepts \
   /usr/include/c++/14.2/cstdlib \
   /usr/include/c++/14.2/debug/assertions.h \
@@ -828,6 +845,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o: /home/escazure/cpp_project
   /usr/include/c++/14.2/ext/type_traits.h \
   /usr/include/c++/14.2/limits \
   /usr/include/c++/14.2/math.h \
+  /usr/include/c++/14.2/new \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/stdlib.h \
   /usr/include/c++/14.2/tr1/bessel_function.tcc \
@@ -1041,15 +1059,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o: /home/escazure/cpp_projec
   /usr/include/c++/14.2/bit \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
+  /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/functexcept.h \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/move.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/std_abs.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
+  /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
@@ -1057,6 +1079,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o: /home/escazure/cpp_projec
   /usr/include/c++/14.2/bits/utility.h \
   /usr/include/c++/14.2/bits/version.h \
   /usr/include/c++/14.2/cmath \
+  /usr/include/c++/14.2/compare \
   /usr/include/c++/14.2/concepts \
   /usr/include/c++/14.2/cstdlib \
   /usr/include/c++/14.2/debug/assertions.h \
@@ -1065,6 +1088,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o: /home/escazure/cpp_projec
   /usr/include/c++/14.2/ext/type_traits.h \
   /usr/include/c++/14.2/limits \
   /usr/include/c++/14.2/math.h \
+  /usr/include/c++/14.2/new \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/stdlib.h \
   /usr/include/c++/14.2/tr1/bessel_function.tcc \
@@ -1284,7 +1308,9 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o: /home/escazure/cpp_projects/t
   /usr/include/c++/14.2/bits/functional_hash.h \
   /usr/include/c++/14.2/bits/hash_bytes.h \
   /usr/include/c++/14.2/bits/invoke.h \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/localefwd.h \
+  /usr/include/c++/14.2/bits/max_size_type.h \
   /usr/include/c++/14.2/bits/memory_resource.h \
   /usr/include/c++/14.2/bits/memoryfwd.h \
   /usr/include/c++/14.2/bits/move.h \
@@ -1294,6 +1320,9 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o: /home/escazure/cpp_projects/t
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
   /usr/include/c++/14.2/bits/range_access.h \
+  /usr/include/c++/14.2/bits/ranges_base.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
+  /usr/include/c++/14.2/bits/ranges_util.h \
   /usr/include/c++/14.2/bits/refwrap.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
   /usr/include/c++/14.2/bits/std_abs.h \
@@ -1317,6 +1346,7 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o: /home/escazure/cpp_projects/t
   /usr/include/c++/14.2/cctype \
   /usr/include/c++/14.2/cerrno \
   /usr/include/c++/14.2/clocale \
+  /usr/include/c++/14.2/compare \
   /usr/include/c++/14.2/concepts \
   /usr/include/c++/14.2/cstddef \
   /usr/include/c++/14.2/cstdio \
@@ -1331,6 +1361,7 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o: /home/escazure/cpp_projects/t
   /usr/include/c++/14.2/initializer_list \
   /usr/include/c++/14.2/iosfwd \
   /usr/include/c++/14.2/new \
+  /usr/include/c++/14.2/numbers \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/stdlib.h \
   /usr/include/c++/14.2/string \
@@ -1480,6 +1511,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /home/escazure/cpp_projects/tgv/include/core.h \
   /home/escazure/cpp_projects/tgv/include/gpu_timer.h \
   /home/escazure/cpp_projects/tgv/include/helper.h \
+  /home/escazure/cpp_projects/tgv/include/logger.h \
   /home/escazure/cpp_projects/tgv/include/render.h \
   /home/escazure/cpp_projects/tgv/include/sampler.h \
   /home/escazure/cpp_projects/tgv/include/shader_program.h \
@@ -1581,7 +1613,10 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/array \
   /usr/include/c++/14.2/backward/binders.h \
   /usr/include/c++/14.2/bit \
+  /usr/include/c++/14.2/bits/algorithmfwd.h \
+  /usr/include/c++/14.2/bits/align.h \
   /usr/include/c++/14.2/bits/alloc_traits.h \
+  /usr/include/c++/14.2/bits/allocated_ptr.h \
   /usr/include/c++/14.2/bits/allocator.h \
   /usr/include/c++/14.2/bits/basic_ios.h \
   /usr/include/c++/14.2/bits/basic_ios.tcc \
@@ -1590,11 +1625,13 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/bits/char_traits.h \
   /usr/include/c++/14.2/bits/charconv.h \
   /usr/include/c++/14.2/bits/chrono.h \
+  /usr/include/c++/14.2/bits/chrono_io.h \
   /usr/include/c++/14.2/bits/codecvt.h \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
   /usr/include/c++/14.2/bits/cxxabi_forced.h \
   /usr/include/c++/14.2/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2/bits/enable_special_members.h \
   /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/exception_ptr.h \
@@ -1605,11 +1642,16 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/bits/invoke.h \
   /usr/include/c++/14.2/bits/ios_base.h \
   /usr/include/c++/14.2/bits/istream.tcc \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/locale_classes.h \
   /usr/include/c++/14.2/bits/locale_classes.tcc \
+  /usr/include/c++/14.2/bits/locale_conv.h \
   /usr/include/c++/14.2/bits/locale_facets.h \
   /usr/include/c++/14.2/bits/locale_facets.tcc \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.h \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.tcc \
   /usr/include/c++/14.2/bits/localefwd.h \
+  /usr/include/c++/14.2/bits/max_size_type.h \
   /usr/include/c++/14.2/bits/memory_resource.h \
   /usr/include/c++/14.2/bits/memoryfwd.h \
   /usr/include/c++/14.2/bits/move.h \
@@ -1621,26 +1663,40 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/bits/postypes.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/quoted_string.h \
   /usr/include/c++/14.2/bits/range_access.h \
+  /usr/include/c++/14.2/bits/ranges_algobase.h \
+  /usr/include/c++/14.2/bits/ranges_base.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
+  /usr/include/c++/14.2/bits/ranges_util.h \
   /usr/include/c++/14.2/bits/refwrap.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
+  /usr/include/c++/14.2/bits/shared_ptr.h \
+  /usr/include/c++/14.2/bits/shared_ptr_base.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/sstream.tcc \
   /usr/include/c++/14.2/bits/std_abs.h \
+  /usr/include/c++/14.2/bits/stl_algo.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
   /usr/include/c++/14.2/bits/stl_bvector.h \
   /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_function.h \
+  /usr/include/c++/14.2/bits/stl_heap.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2/bits/stl_pair.h \
+  /usr/include/c++/14.2/bits/stl_tempbuf.h \
   /usr/include/c++/14.2/bits/stl_uninitialized.h \
   /usr/include/c++/14.2/bits/stl_vector.h \
   /usr/include/c++/14.2/bits/streambuf.tcc \
   /usr/include/c++/14.2/bits/streambuf_iterator.h \
   /usr/include/c++/14.2/bits/string_view.tcc \
   /usr/include/c++/14.2/bits/stringfwd.h \
+  /usr/include/c++/14.2/bits/unicode-data.h \
+  /usr/include/c++/14.2/bits/unicode.h \
+  /usr/include/c++/14.2/bits/uniform_int_dist.h \
+  /usr/include/c++/14.2/bits/unique_ptr.h \
   /usr/include/c++/14.2/bits/uses_allocator.h \
   /usr/include/c++/14.2/bits/uses_allocator_args.h \
   /usr/include/c++/14.2/bits/utility.h \
@@ -1650,6 +1706,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/cctype \
   /usr/include/c++/14.2/cerrno \
   /usr/include/c++/14.2/cfloat \
+  /usr/include/c++/14.2/charconv \
   /usr/include/c++/14.2/chrono \
   /usr/include/c++/14.2/climits \
   /usr/include/c++/14.2/clocale \
@@ -1667,22 +1724,31 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/debug/assertions.h \
   /usr/include/c++/14.2/debug/debug.h \
   /usr/include/c++/14.2/exception \
+  /usr/include/c++/14.2/ext/aligned_buffer.h \
   /usr/include/c++/14.2/ext/alloc_traits.h \
   /usr/include/c++/14.2/ext/atomicity.h \
+  /usr/include/c++/14.2/ext/concurrence.h \
   /usr/include/c++/14.2/ext/numeric_traits.h \
   /usr/include/c++/14.2/ext/string_conversions.h \
   /usr/include/c++/14.2/ext/type_traits.h \
+  /usr/include/c++/14.2/format \
   /usr/include/c++/14.2/fstream \
   /usr/include/c++/14.2/initializer_list \
+  /usr/include/c++/14.2/iomanip \
   /usr/include/c++/14.2/ios \
   /usr/include/c++/14.2/iosfwd \
   /usr/include/c++/14.2/iostream \
   /usr/include/c++/14.2/istream \
   /usr/include/c++/14.2/limits \
+  /usr/include/c++/14.2/locale \
   /usr/include/c++/14.2/new \
+  /usr/include/c++/14.2/numbers \
+  /usr/include/c++/14.2/optional \
   /usr/include/c++/14.2/ostream \
+  /usr/include/c++/14.2/print \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/ratio \
+  /usr/include/c++/14.2/span \
   /usr/include/c++/14.2/sstream \
   /usr/include/c++/14.2/stdexcept \
   /usr/include/c++/14.2/stdlib.h \
@@ -1705,6 +1771,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/tuple \
   /usr/include/c++/14.2/type_traits \
   /usr/include/c++/14.2/typeinfo \
+  /usr/include/c++/14.2/variant \
   /usr/include/c++/14.2/vector \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
@@ -1718,7 +1785,9 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1726,6 +1795,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o: /home/escazure/cpp_projects/tgv/src/core.cpp 
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -1969,6 +2039,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /home/escazure/cpp_projects/tgv/include/core.h \
   /home/escazure/cpp_projects/tgv/include/gpu_timer.h \
   /home/escazure/cpp_projects/tgv/include/helper.h \
+  /home/escazure/cpp_projects/tgv/include/logger.h \
   /home/escazure/cpp_projects/tgv/include/render.h \
   /home/escazure/cpp_projects/tgv/include/sampler.h \
   /home/escazure/cpp_projects/tgv/include/shader_program.h \
@@ -2070,7 +2141,10 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/array \
   /usr/include/c++/14.2/backward/binders.h \
   /usr/include/c++/14.2/bit \
+  /usr/include/c++/14.2/bits/algorithmfwd.h \
+  /usr/include/c++/14.2/bits/align.h \
   /usr/include/c++/14.2/bits/alloc_traits.h \
+  /usr/include/c++/14.2/bits/allocated_ptr.h \
   /usr/include/c++/14.2/bits/allocator.h \
   /usr/include/c++/14.2/bits/basic_ios.h \
   /usr/include/c++/14.2/bits/basic_ios.tcc \
@@ -2079,11 +2153,13 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/bits/char_traits.h \
   /usr/include/c++/14.2/bits/charconv.h \
   /usr/include/c++/14.2/bits/chrono.h \
+  /usr/include/c++/14.2/bits/chrono_io.h \
   /usr/include/c++/14.2/bits/codecvt.h \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
   /usr/include/c++/14.2/bits/cxxabi_forced.h \
   /usr/include/c++/14.2/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2/bits/enable_special_members.h \
   /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/exception_ptr.h \
@@ -2094,11 +2170,16 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/bits/invoke.h \
   /usr/include/c++/14.2/bits/ios_base.h \
   /usr/include/c++/14.2/bits/istream.tcc \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/locale_classes.h \
   /usr/include/c++/14.2/bits/locale_classes.tcc \
+  /usr/include/c++/14.2/bits/locale_conv.h \
   /usr/include/c++/14.2/bits/locale_facets.h \
   /usr/include/c++/14.2/bits/locale_facets.tcc \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.h \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.tcc \
   /usr/include/c++/14.2/bits/localefwd.h \
+  /usr/include/c++/14.2/bits/max_size_type.h \
   /usr/include/c++/14.2/bits/memory_resource.h \
   /usr/include/c++/14.2/bits/memoryfwd.h \
   /usr/include/c++/14.2/bits/move.h \
@@ -2110,26 +2191,40 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/bits/postypes.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/quoted_string.h \
   /usr/include/c++/14.2/bits/range_access.h \
+  /usr/include/c++/14.2/bits/ranges_algobase.h \
+  /usr/include/c++/14.2/bits/ranges_base.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
+  /usr/include/c++/14.2/bits/ranges_util.h \
   /usr/include/c++/14.2/bits/refwrap.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
+  /usr/include/c++/14.2/bits/shared_ptr.h \
+  /usr/include/c++/14.2/bits/shared_ptr_base.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/sstream.tcc \
   /usr/include/c++/14.2/bits/std_abs.h \
+  /usr/include/c++/14.2/bits/stl_algo.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
   /usr/include/c++/14.2/bits/stl_bvector.h \
   /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_function.h \
+  /usr/include/c++/14.2/bits/stl_heap.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2/bits/stl_pair.h \
+  /usr/include/c++/14.2/bits/stl_tempbuf.h \
   /usr/include/c++/14.2/bits/stl_uninitialized.h \
   /usr/include/c++/14.2/bits/stl_vector.h \
   /usr/include/c++/14.2/bits/streambuf.tcc \
   /usr/include/c++/14.2/bits/streambuf_iterator.h \
   /usr/include/c++/14.2/bits/string_view.tcc \
   /usr/include/c++/14.2/bits/stringfwd.h \
+  /usr/include/c++/14.2/bits/unicode-data.h \
+  /usr/include/c++/14.2/bits/unicode.h \
+  /usr/include/c++/14.2/bits/uniform_int_dist.h \
+  /usr/include/c++/14.2/bits/unique_ptr.h \
   /usr/include/c++/14.2/bits/uses_allocator.h \
   /usr/include/c++/14.2/bits/uses_allocator_args.h \
   /usr/include/c++/14.2/bits/utility.h \
@@ -2139,6 +2234,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/cctype \
   /usr/include/c++/14.2/cerrno \
   /usr/include/c++/14.2/cfloat \
+  /usr/include/c++/14.2/charconv \
   /usr/include/c++/14.2/chrono \
   /usr/include/c++/14.2/climits \
   /usr/include/c++/14.2/clocale \
@@ -2156,22 +2252,31 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/debug/assertions.h \
   /usr/include/c++/14.2/debug/debug.h \
   /usr/include/c++/14.2/exception \
+  /usr/include/c++/14.2/ext/aligned_buffer.h \
   /usr/include/c++/14.2/ext/alloc_traits.h \
   /usr/include/c++/14.2/ext/atomicity.h \
+  /usr/include/c++/14.2/ext/concurrence.h \
   /usr/include/c++/14.2/ext/numeric_traits.h \
   /usr/include/c++/14.2/ext/string_conversions.h \
   /usr/include/c++/14.2/ext/type_traits.h \
+  /usr/include/c++/14.2/format \
   /usr/include/c++/14.2/fstream \
   /usr/include/c++/14.2/initializer_list \
+  /usr/include/c++/14.2/iomanip \
   /usr/include/c++/14.2/ios \
   /usr/include/c++/14.2/iosfwd \
   /usr/include/c++/14.2/iostream \
   /usr/include/c++/14.2/istream \
   /usr/include/c++/14.2/limits \
+  /usr/include/c++/14.2/locale \
   /usr/include/c++/14.2/new \
+  /usr/include/c++/14.2/numbers \
+  /usr/include/c++/14.2/optional \
   /usr/include/c++/14.2/ostream \
+  /usr/include/c++/14.2/print \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/ratio \
+  /usr/include/c++/14.2/span \
   /usr/include/c++/14.2/sstream \
   /usr/include/c++/14.2/stdexcept \
   /usr/include/c++/14.2/stdlib.h \
@@ -2194,6 +2299,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/tuple \
   /usr/include/c++/14.2/type_traits \
   /usr/include/c++/14.2/typeinfo \
+  /usr/include/c++/14.2/variant \
   /usr/include/c++/14.2/vector \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
@@ -2207,7 +2313,9 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2215,6 +2323,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o: /home/escazure/cpp_projects/tgv/src/helper.
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -2559,7 +2668,10 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/array \
   /usr/include/c++/14.2/backward/binders.h \
   /usr/include/c++/14.2/bit \
+  /usr/include/c++/14.2/bits/algorithmfwd.h \
+  /usr/include/c++/14.2/bits/align.h \
   /usr/include/c++/14.2/bits/alloc_traits.h \
+  /usr/include/c++/14.2/bits/allocated_ptr.h \
   /usr/include/c++/14.2/bits/allocator.h \
   /usr/include/c++/14.2/bits/basic_ios.h \
   /usr/include/c++/14.2/bits/basic_ios.tcc \
@@ -2568,11 +2680,13 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/bits/char_traits.h \
   /usr/include/c++/14.2/bits/charconv.h \
   /usr/include/c++/14.2/bits/chrono.h \
+  /usr/include/c++/14.2/bits/chrono_io.h \
   /usr/include/c++/14.2/bits/codecvt.h \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
   /usr/include/c++/14.2/bits/cxxabi_forced.h \
   /usr/include/c++/14.2/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2/bits/enable_special_members.h \
   /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/exception_ptr.h \
@@ -2583,11 +2697,16 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/bits/invoke.h \
   /usr/include/c++/14.2/bits/ios_base.h \
   /usr/include/c++/14.2/bits/istream.tcc \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/locale_classes.h \
   /usr/include/c++/14.2/bits/locale_classes.tcc \
+  /usr/include/c++/14.2/bits/locale_conv.h \
   /usr/include/c++/14.2/bits/locale_facets.h \
   /usr/include/c++/14.2/bits/locale_facets.tcc \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.h \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.tcc \
   /usr/include/c++/14.2/bits/localefwd.h \
+  /usr/include/c++/14.2/bits/max_size_type.h \
   /usr/include/c++/14.2/bits/memory_resource.h \
   /usr/include/c++/14.2/bits/memoryfwd.h \
   /usr/include/c++/14.2/bits/move.h \
@@ -2599,26 +2718,40 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/bits/postypes.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/quoted_string.h \
   /usr/include/c++/14.2/bits/range_access.h \
+  /usr/include/c++/14.2/bits/ranges_algobase.h \
+  /usr/include/c++/14.2/bits/ranges_base.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
+  /usr/include/c++/14.2/bits/ranges_util.h \
   /usr/include/c++/14.2/bits/refwrap.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
+  /usr/include/c++/14.2/bits/shared_ptr.h \
+  /usr/include/c++/14.2/bits/shared_ptr_base.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/sstream.tcc \
   /usr/include/c++/14.2/bits/std_abs.h \
+  /usr/include/c++/14.2/bits/stl_algo.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
   /usr/include/c++/14.2/bits/stl_bvector.h \
   /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_function.h \
+  /usr/include/c++/14.2/bits/stl_heap.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2/bits/stl_pair.h \
+  /usr/include/c++/14.2/bits/stl_tempbuf.h \
   /usr/include/c++/14.2/bits/stl_uninitialized.h \
   /usr/include/c++/14.2/bits/stl_vector.h \
   /usr/include/c++/14.2/bits/streambuf.tcc \
   /usr/include/c++/14.2/bits/streambuf_iterator.h \
   /usr/include/c++/14.2/bits/string_view.tcc \
   /usr/include/c++/14.2/bits/stringfwd.h \
+  /usr/include/c++/14.2/bits/unicode-data.h \
+  /usr/include/c++/14.2/bits/unicode.h \
+  /usr/include/c++/14.2/bits/uniform_int_dist.h \
+  /usr/include/c++/14.2/bits/unique_ptr.h \
   /usr/include/c++/14.2/bits/uses_allocator.h \
   /usr/include/c++/14.2/bits/uses_allocator_args.h \
   /usr/include/c++/14.2/bits/utility.h \
@@ -2628,6 +2761,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/cctype \
   /usr/include/c++/14.2/cerrno \
   /usr/include/c++/14.2/cfloat \
+  /usr/include/c++/14.2/charconv \
   /usr/include/c++/14.2/chrono \
   /usr/include/c++/14.2/climits \
   /usr/include/c++/14.2/clocale \
@@ -2645,22 +2779,30 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/debug/assertions.h \
   /usr/include/c++/14.2/debug/debug.h \
   /usr/include/c++/14.2/exception \
+  /usr/include/c++/14.2/ext/aligned_buffer.h \
   /usr/include/c++/14.2/ext/alloc_traits.h \
   /usr/include/c++/14.2/ext/atomicity.h \
+  /usr/include/c++/14.2/ext/concurrence.h \
   /usr/include/c++/14.2/ext/numeric_traits.h \
   /usr/include/c++/14.2/ext/string_conversions.h \
   /usr/include/c++/14.2/ext/type_traits.h \
+  /usr/include/c++/14.2/format \
   /usr/include/c++/14.2/fstream \
   /usr/include/c++/14.2/initializer_list \
+  /usr/include/c++/14.2/iomanip \
   /usr/include/c++/14.2/ios \
   /usr/include/c++/14.2/iosfwd \
   /usr/include/c++/14.2/iostream \
   /usr/include/c++/14.2/istream \
   /usr/include/c++/14.2/limits \
+  /usr/include/c++/14.2/locale \
   /usr/include/c++/14.2/new \
+  /usr/include/c++/14.2/numbers \
+  /usr/include/c++/14.2/optional \
   /usr/include/c++/14.2/ostream \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/ratio \
+  /usr/include/c++/14.2/span \
   /usr/include/c++/14.2/sstream \
   /usr/include/c++/14.2/stdexcept \
   /usr/include/c++/14.2/stdlib.h \
@@ -2683,6 +2825,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/tuple \
   /usr/include/c++/14.2/type_traits \
   /usr/include/c++/14.2/typeinfo \
+  /usr/include/c++/14.2/variant \
   /usr/include/c++/14.2/vector \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
@@ -2696,7 +2839,9 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2704,6 +2849,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o: /home/escazure/cpp_projects/tgv/src/main.cpp 
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -3049,7 +3195,10 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/array \
   /usr/include/c++/14.2/backward/binders.h \
   /usr/include/c++/14.2/bit \
+  /usr/include/c++/14.2/bits/algorithmfwd.h \
+  /usr/include/c++/14.2/bits/align.h \
   /usr/include/c++/14.2/bits/alloc_traits.h \
+  /usr/include/c++/14.2/bits/allocated_ptr.h \
   /usr/include/c++/14.2/bits/allocator.h \
   /usr/include/c++/14.2/bits/basic_ios.h \
   /usr/include/c++/14.2/bits/basic_ios.tcc \
@@ -3058,11 +3207,13 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/bits/char_traits.h \
   /usr/include/c++/14.2/bits/charconv.h \
   /usr/include/c++/14.2/bits/chrono.h \
+  /usr/include/c++/14.2/bits/chrono_io.h \
   /usr/include/c++/14.2/bits/codecvt.h \
   /usr/include/c++/14.2/bits/concept_check.h \
   /usr/include/c++/14.2/bits/cpp_type_traits.h \
   /usr/include/c++/14.2/bits/cxxabi_forced.h \
   /usr/include/c++/14.2/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14.2/bits/enable_special_members.h \
   /usr/include/c++/14.2/bits/exception.h \
   /usr/include/c++/14.2/bits/exception_defines.h \
   /usr/include/c++/14.2/bits/exception_ptr.h \
@@ -3073,11 +3224,16 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/bits/invoke.h \
   /usr/include/c++/14.2/bits/ios_base.h \
   /usr/include/c++/14.2/bits/istream.tcc \
+  /usr/include/c++/14.2/bits/iterator_concepts.h \
   /usr/include/c++/14.2/bits/locale_classes.h \
   /usr/include/c++/14.2/bits/locale_classes.tcc \
+  /usr/include/c++/14.2/bits/locale_conv.h \
   /usr/include/c++/14.2/bits/locale_facets.h \
   /usr/include/c++/14.2/bits/locale_facets.tcc \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.h \
+  /usr/include/c++/14.2/bits/locale_facets_nonio.tcc \
   /usr/include/c++/14.2/bits/localefwd.h \
+  /usr/include/c++/14.2/bits/max_size_type.h \
   /usr/include/c++/14.2/bits/memory_resource.h \
   /usr/include/c++/14.2/bits/memoryfwd.h \
   /usr/include/c++/14.2/bits/move.h \
@@ -3089,26 +3245,40 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/bits/postypes.h \
   /usr/include/c++/14.2/bits/predefined_ops.h \
   /usr/include/c++/14.2/bits/ptr_traits.h \
+  /usr/include/c++/14.2/bits/quoted_string.h \
   /usr/include/c++/14.2/bits/range_access.h \
+  /usr/include/c++/14.2/bits/ranges_algobase.h \
+  /usr/include/c++/14.2/bits/ranges_base.h \
+  /usr/include/c++/14.2/bits/ranges_cmp.h \
+  /usr/include/c++/14.2/bits/ranges_util.h \
   /usr/include/c++/14.2/bits/refwrap.h \
   /usr/include/c++/14.2/bits/requires_hosted.h \
+  /usr/include/c++/14.2/bits/shared_ptr.h \
+  /usr/include/c++/14.2/bits/shared_ptr_base.h \
   /usr/include/c++/14.2/bits/specfun.h \
   /usr/include/c++/14.2/bits/sstream.tcc \
   /usr/include/c++/14.2/bits/std_abs.h \
+  /usr/include/c++/14.2/bits/stl_algo.h \
   /usr/include/c++/14.2/bits/stl_algobase.h \
   /usr/include/c++/14.2/bits/stl_bvector.h \
   /usr/include/c++/14.2/bits/stl_construct.h \
   /usr/include/c++/14.2/bits/stl_function.h \
+  /usr/include/c++/14.2/bits/stl_heap.h \
   /usr/include/c++/14.2/bits/stl_iterator.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
   /usr/include/c++/14.2/bits/stl_pair.h \
+  /usr/include/c++/14.2/bits/stl_tempbuf.h \
   /usr/include/c++/14.2/bits/stl_uninitialized.h \
   /usr/include/c++/14.2/bits/stl_vector.h \
   /usr/include/c++/14.2/bits/streambuf.tcc \
   /usr/include/c++/14.2/bits/streambuf_iterator.h \
   /usr/include/c++/14.2/bits/string_view.tcc \
   /usr/include/c++/14.2/bits/stringfwd.h \
+  /usr/include/c++/14.2/bits/unicode-data.h \
+  /usr/include/c++/14.2/bits/unicode.h \
+  /usr/include/c++/14.2/bits/uniform_int_dist.h \
+  /usr/include/c++/14.2/bits/unique_ptr.h \
   /usr/include/c++/14.2/bits/uses_allocator.h \
   /usr/include/c++/14.2/bits/uses_allocator_args.h \
   /usr/include/c++/14.2/bits/utility.h \
@@ -3118,6 +3288,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/cctype \
   /usr/include/c++/14.2/cerrno \
   /usr/include/c++/14.2/cfloat \
+  /usr/include/c++/14.2/charconv \
   /usr/include/c++/14.2/chrono \
   /usr/include/c++/14.2/climits \
   /usr/include/c++/14.2/clocale \
@@ -3135,22 +3306,30 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/debug/assertions.h \
   /usr/include/c++/14.2/debug/debug.h \
   /usr/include/c++/14.2/exception \
+  /usr/include/c++/14.2/ext/aligned_buffer.h \
   /usr/include/c++/14.2/ext/alloc_traits.h \
   /usr/include/c++/14.2/ext/atomicity.h \
+  /usr/include/c++/14.2/ext/concurrence.h \
   /usr/include/c++/14.2/ext/numeric_traits.h \
   /usr/include/c++/14.2/ext/string_conversions.h \
   /usr/include/c++/14.2/ext/type_traits.h \
+  /usr/include/c++/14.2/format \
   /usr/include/c++/14.2/fstream \
   /usr/include/c++/14.2/initializer_list \
+  /usr/include/c++/14.2/iomanip \
   /usr/include/c++/14.2/ios \
   /usr/include/c++/14.2/iosfwd \
   /usr/include/c++/14.2/iostream \
   /usr/include/c++/14.2/istream \
   /usr/include/c++/14.2/limits \
+  /usr/include/c++/14.2/locale \
   /usr/include/c++/14.2/new \
+  /usr/include/c++/14.2/numbers \
+  /usr/include/c++/14.2/optional \
   /usr/include/c++/14.2/ostream \
   /usr/include/c++/14.2/pstl/pstl_config.h \
   /usr/include/c++/14.2/ratio \
+  /usr/include/c++/14.2/span \
   /usr/include/c++/14.2/sstream \
   /usr/include/c++/14.2/stdexcept \
   /usr/include/c++/14.2/stdlib.h \
@@ -3173,6 +3352,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/tuple \
   /usr/include/c++/14.2/type_traits \
   /usr/include/c++/14.2/typeinfo \
+  /usr/include/c++/14.2/variant \
   /usr/include/c++/14.2/vector \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h \
@@ -3186,7 +3366,9 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h \
   /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3194,6 +3376,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o: /home/escazure/cpp_projects/tgv/src/render.
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -3380,8 +3563,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o:
 
 CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o:
 
-CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
-
 /usr/lib64/libm.so.6:
 
 /usr/lib64/libc_nonshared.a:
@@ -3440,13 +3621,61 @@ CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
 
 /usr/include/linux/posix_types.h:
 
+/usr/include/libintl.h:
+
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h:
+
 /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/lwpintrin.h:
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h:
 
-/usr/include/c++/14.2/cctype:
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/keylockerintrin.h:
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/14.2/variant:
+
+/lib64/libXau.so.6:
+
+/usr/include/c++/14.2/system_error:
+
+/usr/include/c++/14.2/stdexcept:
+
+/usr/include/c++/14.2/sstream:
+
+/usr/include/c++/14.2/ratio:
+
+CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
+
+/usr/include/c++/14.2/print:
+
+/usr/include/c++/14.2/ostream:
+
+/usr/include/c++/14.2/optional:
+
+/usr/include/c++/14.2/locale:
+
+/usr/include/c++/14.2/istream:
+
+/usr/include/c++/14.2/iostream:
+
+/usr/include/c++/14.2/iomanip:
+
+/usr/include/c++/14.2/format:
+
+/usr/include/c++/14.2/exception:
+
+/usr/include/c++/14.2/ctime:
+
+/usr/include/c++/14.2/cstring:
+
+/usr/include/c++/14.2/cstdint:
+
+/usr/include/c++/14.2/climits:
+
+/usr/include/c++/14.2/cfloat:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/ia32intrin.h:
 
@@ -3458,11 +3687,11 @@ CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
 
 /usr/include/c++/14.2/bits/vector.tcc:
 
-/usr/include/c++/14.2/climits:
-
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/gfniintrin.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/fxsrintrin.h:
+
+/usr/include/c++/14.2/bits/unique_ptr.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/clwbintrin.h:
 
@@ -3500,8 +3729,6 @@ CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512ifmaintrin.h:
 
-/usr/include/bits/setjmp.h:
-
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512vnnivlintrin.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512fp16intrin.h:
@@ -3509,6 +3736,10 @@ CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
 /usr/lib32/libX11.so.6:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512fintrin.h:
+
+/usr/include/c++/14.2/ext/atomicity.h:
+
+/usr/include/bits/types/clockid_t.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512dqintrin.h:
 
@@ -3542,15 +3773,9 @@ CMakeFiles/tgv.dir/external/imgui/backends/imgui_impl_glfw.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_geometric.hpp:
 
-CMakeFiles/tgv.dir/external/gl3w/gl3w.c.o:
-
-/usr/include/strings.h:
-
 CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /usr/include/c++/14.2/type_traits:
-
-/home/escazure/cpp_projects/tgv/external/glm/vec2.hpp:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512fp16vlintrin.h:
 
@@ -3588,11 +3813,13 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_vec4.hpp:
 
+/usr/include/c++/14.2/typeinfo:
+
+/usr/include/c++/14.2/concepts:
+
+/usr/include/bits/stdlib-float.h:
+
 /home/escazure/cpp_projects/tgv/external/glm/gtc/quaternion.hpp:
-
-/lib64/libXau.so.6:
-
-/usr/include/c++/14.2/system_error:
 
 /usr/include/c++/14.2/bits/stl_pair.h:
 
@@ -3612,19 +3839,21 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /usr/include/c++/14.2/bits/requires_hosted.h:
 
+/usr/include/c++/14.2/tr1/poly_laguerre.tcc:
+
 /usr/lib32/libXdmcp.so.6:
 
 /usr/include/c++/14.2/debug/assertions.h:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_mat4x2.hpp:
 
+CMakeFiles/tgv.dir/external/gl3w/gl3w.c.o:
+
+/usr/include/strings.h:
+
 /usr/include/c++/14.2/bits/move.h:
 
 /usr/include/c++/14.2/bits/cpp_type_traits.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/immintrin.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512bitalgintrin.h:
 
 /usr/include/bits/local_lim.h:
 
@@ -3640,6 +3869,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_exponential_simd.inl:
 
+/usr/include/c++/14.2/bits/ranges_cmp.h:
+
 /usr/include/bits/xopen_lim.h:
 
 /usr/include/bits/uio_lim.h:
@@ -3652,11 +3883,13 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /usr/include/bits/types/__sigval_t.h:
 
-/usr/include/c++/14.2/concepts:
+/usr/include/c++/14.2/bits/ranges_base.h:
 
-/usr/include/c++/14.2/typeinfo:
+/usr/include/c++/14.2/bits/allocated_ptr.h:
 
 /usr/include/bits/sigcontext.h:
+
+/usr/include/c++/14.2/bits/shared_ptr_base.h:
 
 /usr/include/c++/14.2/debug/debug.h:
 
@@ -3671,6 +3904,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 /usr/include/c++/14.2/stdlib.h:
 
 /usr/include/bits/endian.h:
+
+/usr/include/c++/14.2/bits/iterator_concepts.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/amxbf16intrin.h:
 
@@ -3694,10 +3929,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /usr/include/bits/environments.h:
 
-/usr/include/sys/wait.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/sm3intrin.h:
 
 /usr/include/c++/14.2/ext/type_traits.h:
@@ -3708,8 +3939,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 
 /usr/include/c++/14.2/bits/stringfwd.h:
 
-/home/escazure/cpp_projects/tgv/external/glm/detail/type_mat2x2.inl:
-
 /usr/include/X11/Xosdefs.h:
 
 /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++config.h:
@@ -3719,6 +3948,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 /usr/include/bits/sigaction.h:
 
 /usr/include/c++/14.2/bits/functexcept.h:
+
+/usr/include/c++/14.2/ext/aligned_buffer.h:
 
 /usr/include/dlfcn.h:
 
@@ -3747,6 +3978,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o:
 /home/escazure/cpp_projects/tgv/external/lodepng/lodepng.h:
 
 CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o:
+
+/usr/include/c++/14.2/bits/unicode.h:
 
 /usr/include/c++/14.2/ext/numeric_traits.h:
 
@@ -3778,13 +4011,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/X11/Xfuncproto.h:
 
-/usr/include/c++/14.2/cfloat:
-
 /usr/include/stdlib.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/lzcntintrin.h:
-
-/usr/include/c++/14.2/iostream:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_vec3.inl:
 
@@ -3808,8 +4035,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/c++/14.2/bits/specfun.h:
 
-/usr/include/c++/14.2/tr1/poly_laguerre.tcc:
-
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/iscanonical.h:
@@ -3819,8 +4044,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /usr/include/bits/siginfo-arch.h:
 
 /usr/include/c++/14.2/bits/ostream.tcc:
-
-/usr/include/X11/X.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -3839,6 +4062,10 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /usr/include/c++/14.2/bits/chrono.h:
 
 /usr/include/bits/endianness.h:
+
+/usr/include/c++/14.2/streambuf:
+
+/usr/include/bits/types/siginfo_t.h:
 
 /usr/include/linux/errno.h:
 
@@ -3861,6 +4088,10 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_vector_relational.inl:
 
 /usr/include/bits/waitflags.h:
+
+/home/escazure/cpp_projects/tgv/external/glm/vec2.hpp:
+
+/usr/include/c++/14.2/bits/stl_tempbuf.h:
 
 /usr/include/bits/getopt_core.h:
 
@@ -3896,6 +4127,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/bits/signum-generic.h:
 
+/home/escazure/cpp_projects/tgv/include/logger.h:
+
 /lib64/libXdmcp.so.6:
 
 /home/escazure/cpp_projects/tgv/external/glm/vector_relational.hpp:
@@ -3911,8 +4144,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /home/escazure/cpp_projects/tgv/include/render.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/features-time64.h:
 
 /usr/include/c++/14.2/bits/functional_hash.h:
 
@@ -3938,11 +4169,9 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/c++/14.2/bits/locale_facets.h:
 
-/usr/include/bits/stdlib-float.h:
-
 /usr/include/bits/time64.h:
 
-/usr/include/c++/14.2/ratio:
+/usr/include/c++/14.2/bits/locale_facets_nonio.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -3962,6 +4191,10 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/bits/struct_mutex.h:
 
+/home/escazure/cpp_projects/tgv/external/glm/detail/type_mat2x2.inl:
+
+/usr/include/c++/14.2/bits/ranges_util.h:
+
 /usr/include/X11/extensions/randr.h:
 
 /usr/include/X11/keysym.h:
@@ -3980,7 +4213,11 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/precision.hpp:
 
+/usr/include/c++/14.2/bits/locale_conv.h:
+
 /usr/include/bits/confname.h:
+
+/usr/include/c++/14.2/span:
 
 /home/escazure/cpp_projects/tgv/external/glm/mat2x3.hpp:
 
@@ -3998,9 +4235,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/errno.h:
 
+/home/escazure/cpp_projects/tgv/external/imgui/backends/imgui_impl_opengl3.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/14.2/bits/stl_construct.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
 /usr/include/signal.h:
 
 /usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/14.2/bits/chrono_io.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512erintrin.h:
 
@@ -4018,6 +4265,10 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/c++/14.2/bits/nested_exception.h:
 
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h:
+
+/usr/include/bits/types/sigevent_t.h:
+
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512vlbwintrin.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/stdarg.h:
@@ -4030,6 +4281,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/include/c++/14.2/bits/ostream_insert.h:
 
+/usr/include/c++/14.2/bits/uniform_int_dist.h:
+
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512cdintrin.h:
 
 /usr/include/bits/types/__mbstate_t.h:
@@ -4041,6 +4294,10 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /home/escazure/cpp_projects/tgv/external/imgui/imgui_draw.cpp:
 
 /usr/include/c++/14.2/tr1/modified_bessel_func.tcc:
+
+/usr/include/X11/X.h:
+
+/usr/include/c++/14.2/bits/stl_heap.h:
 
 /usr/include/bits/ss_flags.h:
 
@@ -4056,14 +4313,6 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/float.h:
 
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/home/escazure/cpp_projects/tgv/external/imgui/backends/imgui_impl_opengl3.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/14.2/bits/stl_construct.h:
-
 /usr/include/string.h:
 
 /usr/include/c++/14.2/bits/cxxabi_forced.h:
@@ -4073,6 +4322,8 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /usr/include/X11/extensions/Xrandr.h:
 
 /usr/include/bits/posix1_lim.h:
+
+/usr/include/c++/14.2/bits/locale_facets_nonio.tcc:
 
 /usr/include/wchar.h:
 
@@ -4088,13 +4339,13 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512bitalgvlintrin.h:
 
+/usr/include/c++/14.2/bits/algorithmfwd.h:
+
 /usr/include/locale.h:
 
 /home/escazure/cpp_projects/tgv/external/glm/simd/exponential.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/mm_malloc.h:
 
 /usr/include/bits/types/idtype_t.h:
 
@@ -4113,6 +4364,26 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 /usr/include/bits/posix2_lim.h:
 
 /home/escazure/cpp_projects/tgv/external/glm/mat4x2.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/avx512bitalgintrin.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/immintrin.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/keylockerintrin.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/amxcomplexintrin.h:
+
+/usr/include/c++/14.2/new:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/shaintrin.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/lwpintrin.h:
+
+/usr/include/c++/14.2/cctype:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/lzcntintrin.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/mm_malloc.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/mmintrin.h:
 
@@ -4184,9 +4455,11 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/xsaveintrin.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/vpclmulqdqintrin.h:
+/usr/include/bits/setjmp.h:
 
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++io.h:
+/usr/include/c++/14.2/bits/unicode-data.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/vpclmulqdqintrin.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/wmmintrin.h:
 
@@ -4234,9 +4507,11 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /usr/include/c++/14.2/bits/string_view.tcc:
 
-/usr/include/bits/locale.h:
+/usr/include/c++/14.2/chrono:
 
-/usr/include/c++/14.2/istream:
+/usr/include/bits/errno.h:
+
+/usr/include/bits/locale.h:
 
 /usr/include/bits/types/error_t.h:
 
@@ -4258,19 +4533,27 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /usr/include/c++/14.2/bits/hash_bytes.h:
 
-/usr/include/bits/errno.h:
-
-/usr/include/c++/14.2/chrono:
-
 /usr/lib64/libgcc_s.so:
 
 /usr/include/c++/14.2/bits/invoke.h:
 
 /usr/include/c++/14.2/bits/localefwd.h:
 
+/usr/include/features-time64.h:
+
+/usr/include/c++/14.2/bits/max_size_type.h:
+
+/usr/include/c++/14.2/bits/quoted_string.h:
+
+/usr/include/c++/14.2/cstdio:
+
 /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/stdint.h:
 
 /usr/include/c++/14.2/bits/memory_resource.h:
+
+/usr/include/c++/14.2/cwctype:
+
+/usr/include/c++/14.2/bits/memoryfwd.h:
 
 /usr/include/c++/14.2/bits/new_allocator.h:
 
@@ -4294,13 +4577,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_exponential.inl:
 
-/usr/include/c++/14.2/cstdio:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/shaintrin.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/amxcomplexintrin.h:
-
-/usr/include/c++/14.2/new:
+/usr/include/c++/14.2/numbers:
 
 /usr/include/c++/14.2/string:
 
@@ -4334,15 +4611,19 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_exponential.hpp:
 
+/usr/include/c++/14.2/ext/concurrence.h:
+
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_vector_relational.hpp:
 
 /usr/include/c++/14.2/ext/alloc_traits.h:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/func_vector_relational_simd.inl:
 
-/usr/include/bits/types/siginfo_t.h:
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h:
 
-/usr/include/c++/14.2/streambuf:
+/usr/include/c++/14.2/bits/basic_string.h:
+
+/home/escazure/cpp_projects/tgv/external/glm/detail/type_mat2x3.hpp:
 
 /home/escazure/cpp_projects/tgv/external/imgui/backends/imgui_impl_opengl3_loader.h:
 
@@ -4367,6 +4648,8 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 /usr/include/GL/glext.h:
 
 /home/escazure/cpp_projects/tgv/external/glm/mat4x4.hpp:
+
+/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -4434,6 +4717,8 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /home/escazure/cpp_projects/tgv/include/chunk.h:
 
+/usr/include/c++/14.2/bits/ranges_algobase.h:
+
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_float.hpp:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_int.hpp:
@@ -4447,8 +4732,6 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_vec3.hpp:
 
 /home/escazure/cpp_projects/tgv/external/glm/detail/type_vec4.inl:
-
-/usr/include/c++/14.2/cstdint:
 
 /home/escazure/cpp_projects/tgv/external/glm/gtc/constants.inl:
 
@@ -4470,15 +4753,13 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /home/escazure/cpp_projects/tgv/include/gpu_timer.h:
 
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/14.2/ext/atomicity.h:
-
 /home/escazure/cpp_projects/tgv/external/glm/detail/_fixes.hpp:
 
 /home/escazure/cpp_projects/tgv/include/sampler.h:
 
 /home/escazure/cpp_projects/tgv/include/shader_program.h:
+
+/usr/include/c++/14.2/charconv:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -4493,6 +4774,8 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/14.2/bits/enable_special_members.h:
 
 /usr/include/asm/bitsperlong.h:
 
@@ -4514,6 +4797,12 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /usr/include/c++/14.2/array:
 
+/usr/include/sys/wait.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/14.2/bits/align.h:
+
 /usr/include/c++/14.2/bits/codecvt.h:
 
 /usr/include/c++/14.2/bits/fstream.tcc:
@@ -4528,36 +4817,8 @@ CMakeFiles/tgv.dir/src/core.cpp.o:
 
 /usr/include/c++/14.2/bits/locale_facets.tcc:
 
+/usr/include/c++/14.2/bits/shared_ptr.h:
+
+/usr/include/c++/14.2/bits/stl_algo.h:
+
 /usr/include/c++/14.2/bits/streambuf.tcc:
-
-/usr/include/c++/14.2/cstring:
-
-/usr/include/c++/14.2/ctime:
-
-/usr/include/c++/14.2/bits/memoryfwd.h:
-
-/usr/include/c++/14.2/cwctype:
-
-/usr/include/c++/14.2/exception:
-
-/usr/include/c++/14.2/ostream:
-
-/usr/include/c++/14.2/sstream:
-
-/usr/include/c++/14.2/stdexcept:
-
-/usr/include/c++/14.2/bits/basic_string.h:
-
-/home/escazure/cpp_projects/tgv/external/glm/detail/type_mat2x3.hpp:
-
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h:
-
-/usr/include/bits/types/sigevent_t.h:
-
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h:
-
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/ctype_base.h:
-
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
-
-/usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h:

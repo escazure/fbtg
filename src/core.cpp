@@ -1,4 +1,5 @@
 #include "core.h"
+#include "logger.h"
 
 AppState state;
 
@@ -15,8 +16,8 @@ Sampler linearClamp;
 unsigned int shadowMapFBO, reflectionFBO;
 
 GLFWwindow* init(){
-	if(state.logging) std::cout << "Logging enabled\n";
-	if(state.debug_mode) std::cout << "OpenGL debug callback enabled\n";
+	if(state.logging) log(MESSAGE_INFO, "[CORE] Logging enabled");
+	if(state.debug_mode) log(MESSAGE_INFO, "[CORE] OpenGL debug callback enabled");
 	
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -32,8 +33,7 @@ GLFWwindow* init(){
 	glfwSetCursorPosCallback(window, mouse_callback_wrapper);
 	glfwSetKeyCallback(window, key_callback_wrapper);
 
-	if(gl3wInit() != 0)
-		std::cerr << "ERROR: Failed to init gl3w" << std::endl;
+	if(gl3wInit() != 0) log(MESSAGE_ERROR, "[GL3W] Failed to init gl3w");
 
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
@@ -73,11 +73,10 @@ GLFWwindow* init(){
 	state.window_height = mode->height;
 
 	if(state.logging){
-		std::cout << "Launched with:\n";
-		std::cout << " Vendor - " << glGetString(GL_VENDOR) << "\n";
-		std::cout << " Renderer - " << glGetString(GL_RENDERER) << "\n";
-		std::cout << " Version - " << glGetString(GL_VERSION) << "\n";
-		std::cout << " GLSL - " << glGetString(GL_SHADING_LANGUAGE_VERSION) << "\n\n";
+		log(MESSAGE_INFO, std::format("[CORE] Vendor - {}", getGLString(GL_VENDOR)));
+		log(MESSAGE_INFO, std::format("[CORE] Renderer - {}", getGLString(GL_RENDERER)));
+		log(MESSAGE_INFO, std::format("[CORE] OpenGL Version - {}", getGLString(GL_VERSION)));
+		log(MESSAGE_INFO, std::format("[CORE] GLSL Version - {}", getGLString(GL_SHADING_LANGUAGE_VERSION)));
 	}
 
 	if(state.debug_mode){
@@ -105,13 +104,12 @@ void run(GLFWwindow* window){
 	Shader min_max_compute_shader("minMaxComp/min_max.comp");
 
 	if(state.logging){
-		std::cout << "Shaders id:\n";
-		std::cout << " Final - " << shader.id << "\n";
-		std::cout << " Skybox - " << skybox_shader.id << "\n";
-		std::cout << " Normal Map - " << normal_map_shader.id << "\n";
-		std::cout << " Shadow Map - " << shadow_map_shader.id << "\n";
-		std::cout << " Min Max Compute - " << min_max_compute_shader.id << "\n";
-		std::cout << " Water Plane - " << water_plane_shader.id << "\n";
+		log(MESSAGE_INFO, std::format("[CORE] Final shader id - {}", shader.id));
+		log(MESSAGE_INFO, std::format("[CORE] Skybox shader id - {}", skybox_shader.id));
+		log(MESSAGE_INFO, std::format("[CORE] Normal map shader id - {}", normal_map_shader.id));
+		log(MESSAGE_INFO, std::format("[CORE] Shadow map shader id - {}", shadow_map_shader.id));
+		log(MESSAGE_INFO, std::format("[CORE] Min Max Compute shader id - {}", min_max_compute_shader.id));
+		log(MESSAGE_INFO, std::format("[CORE] Water plane shader id - {}", water_plane_shader.id));
 	}
 
 	std::array<Timer, TIMER_COUNT> timers = {
@@ -155,7 +153,7 @@ void run(GLFWwindow* window){
 
 			// ----- Height map generation ----- //
 			if(!state.height_map_imported){
-				if(state.logging) std::cout << "Generating heightmap...\n";
+				if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Generating heightmap...");
 				heightMap.resize(1, state.size, state.size);
 				heightMap.bindAsImage(0);
 				linearClamp.bind(0);
@@ -169,26 +167,26 @@ void run(GLFWwindow* window){
 				timers[HEIGHT_MAP_ID].end();
 
 				glMemoryBarrier(barrier);
-				if(state.logging) std::cout << "Done\n";
+				if(state.logging) log(MESSAGE_SUCCESS, "[CORE RENDER LOOP] Done");
 			}
 			else{
-				if(state.logging) std::cout << "Skipped heightmap generation, was imported\n";
+				if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Skipped heightmap generation, was imported");
 			}
 
 			// ----- Compute min/max height ----- //
 			if(!state.height_map_min_max_imported){
-				if(state.logging) std::cout << "Calculating min/max heights...\n";
+				if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Calculating min/max heights...");
 				timers[MIN_MAX_ID].begin();
 				getMinMaxHeight(min_max_compute_shader, state, heightMap, state.size, state.size);
 				timers[MIN_MAX_ID].end();
-				if(state.logging) std::cout << "Done\n";
+				if(state.logging) log(MESSAGE_SUCCESS, "[CORE RENDER LOOP] Done");
 			}
 			else{
-				if(state.logging) std::cout << "Skipped min/max calculations, was imported\n";
+				if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Skipped min/max calculations, were imported");
 			}
 
 			// ----- Normalmap generation ----- //
-			if(state.logging) std::cout << "Generating normalmap...\n";
+			if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Generating normalmap...");
 			normalMap.resize(1, state.size, state.size);
 			normalMap.bindAsImage(1);
 			linearClamp.bind(1);
@@ -204,10 +202,10 @@ void run(GLFWwindow* window){
 			timers[NORMAL_MAP_ID].end();
 
 			glMemoryBarrier(barrier);
-			if(state.logging) std::cout << "Done\n";
+			if(state.logging) log(MESSAGE_SUCCESS, "[CORE RENDER LOOP] Done");
 
 			// ----- Shadowmap generation ----- //
-			if(state.logging) std::cout << "Generating shadowmap...\n";
+			if(state.logging) log(MESSAGE_INFO, "[CORE RENDER LOOP] Generating shadowmap...");
 			shadowMap.resize(1, state.size, state.size);
 			shadowMap.attach(shadowMapFBO, GL_COLOR_ATTACHMENT0);
 
@@ -231,7 +229,7 @@ void run(GLFWwindow* window){
 			render_quad();	
 			timers[SHADOW_MAP_ID].end();
 
-			if(state.logging) std::cout << "Done\n";
+			if(state.logging) log(MESSAGE_SUCCESS, "[CORE RENDER LOOP] Done");
 
 			glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
@@ -320,8 +318,7 @@ void run(GLFWwindow* window){
 		for(std::size_t i = 0; i < timers.size(); i++){
 			if(timers[i].isAvailable()){
 				double time = timers[i].getMilli();
-				if(state.logging)
-					std::cout << "Timer [" << timers[i]._name << "] recorded time - " << time << "ms\n";
+				if(state.logging) log(MESSAGE_INFO, std::format("[CORE RENDER LOOP TIMER] {} recorded time - {} ms", timers[i]._name, time));
 				state.gen_time += time;
 			}
 		}

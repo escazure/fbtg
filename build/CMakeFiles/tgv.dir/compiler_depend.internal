@@ -329,15 +329,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o
  /usr/include/c++/14.2/bit
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
+ /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/functexcept.h
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/move.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
  /usr/include/c++/14.2/bits/requires_hosted.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/std_abs.h
  /usr/include/c++/14.2/bits/stl_algobase.h
+ /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
@@ -345,6 +349,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o
  /usr/include/c++/14.2/bits/utility.h
  /usr/include/c++/14.2/bits/version.h
  /usr/include/c++/14.2/cmath
+ /usr/include/c++/14.2/compare
  /usr/include/c++/14.2/concepts
  /usr/include/c++/14.2/cstdlib
  /usr/include/c++/14.2/debug/assertions.h
@@ -353,6 +358,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui.cpp.o
  /usr/include/c++/14.2/ext/type_traits.h
  /usr/include/c++/14.2/limits
  /usr/include/c++/14.2/math.h
+ /usr/include/c++/14.2/new
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/stdlib.h
  /usr/include/c++/14.2/tr1/bessel_function.tcc
@@ -573,15 +579,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o
  /usr/include/c++/14.2/bit
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
+ /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/functexcept.h
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/move.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
  /usr/include/c++/14.2/bits/requires_hosted.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/std_abs.h
  /usr/include/c++/14.2/bits/stl_algobase.h
+ /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
@@ -589,6 +599,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o
  /usr/include/c++/14.2/bits/utility.h
  /usr/include/c++/14.2/bits/version.h
  /usr/include/c++/14.2/cmath
+ /usr/include/c++/14.2/compare
  /usr/include/c++/14.2/concepts
  /usr/include/c++/14.2/cstdlib
  /usr/include/c++/14.2/debug/assertions.h
@@ -597,6 +608,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_draw.cpp.o
  /usr/include/c++/14.2/ext/type_traits.h
  /usr/include/c++/14.2/limits
  /usr/include/c++/14.2/math.h
+ /usr/include/c++/14.2/new
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/stdlib.h
  /usr/include/c++/14.2/tr1/bessel_function.tcc
@@ -810,15 +822,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o
  /usr/include/c++/14.2/bit
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
+ /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/functexcept.h
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/move.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
  /usr/include/c++/14.2/bits/requires_hosted.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/std_abs.h
  /usr/include/c++/14.2/bits/stl_algobase.h
+ /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
@@ -826,6 +842,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o
  /usr/include/c++/14.2/bits/utility.h
  /usr/include/c++/14.2/bits/version.h
  /usr/include/c++/14.2/cmath
+ /usr/include/c++/14.2/compare
  /usr/include/c++/14.2/concepts
  /usr/include/c++/14.2/cstdlib
  /usr/include/c++/14.2/debug/assertions.h
@@ -834,6 +851,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_tables.cpp.o
  /usr/include/c++/14.2/ext/type_traits.h
  /usr/include/c++/14.2/limits
  /usr/include/c++/14.2/math.h
+ /usr/include/c++/14.2/new
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/stdlib.h
  /usr/include/c++/14.2/tr1/bessel_function.tcc
@@ -1048,15 +1066,19 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o
  /usr/include/c++/14.2/bit
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
+ /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/functexcept.h
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/move.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
  /usr/include/c++/14.2/bits/requires_hosted.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/std_abs.h
  /usr/include/c++/14.2/bits/stl_algobase.h
+ /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
@@ -1064,6 +1086,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o
  /usr/include/c++/14.2/bits/utility.h
  /usr/include/c++/14.2/bits/version.h
  /usr/include/c++/14.2/cmath
+ /usr/include/c++/14.2/compare
  /usr/include/c++/14.2/concepts
  /usr/include/c++/14.2/cstdlib
  /usr/include/c++/14.2/debug/assertions.h
@@ -1072,6 +1095,7 @@ CMakeFiles/tgv.dir/external/imgui/imgui_widgets.cpp.o
  /usr/include/c++/14.2/ext/type_traits.h
  /usr/include/c++/14.2/limits
  /usr/include/c++/14.2/math.h
+ /usr/include/c++/14.2/new
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/stdlib.h
  /usr/include/c++/14.2/tr1/bessel_function.tcc
@@ -1292,7 +1316,9 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o
  /usr/include/c++/14.2/bits/functional_hash.h
  /usr/include/c++/14.2/bits/hash_bytes.h
  /usr/include/c++/14.2/bits/invoke.h
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/localefwd.h
+ /usr/include/c++/14.2/bits/max_size_type.h
  /usr/include/c++/14.2/bits/memory_resource.h
  /usr/include/c++/14.2/bits/memoryfwd.h
  /usr/include/c++/14.2/bits/move.h
@@ -1302,6 +1328,9 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
  /usr/include/c++/14.2/bits/range_access.h
+ /usr/include/c++/14.2/bits/ranges_base.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
+ /usr/include/c++/14.2/bits/ranges_util.h
  /usr/include/c++/14.2/bits/refwrap.h
  /usr/include/c++/14.2/bits/requires_hosted.h
  /usr/include/c++/14.2/bits/std_abs.h
@@ -1325,6 +1354,7 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o
  /usr/include/c++/14.2/cctype
  /usr/include/c++/14.2/cerrno
  /usr/include/c++/14.2/clocale
+ /usr/include/c++/14.2/compare
  /usr/include/c++/14.2/concepts
  /usr/include/c++/14.2/cstddef
  /usr/include/c++/14.2/cstdio
@@ -1339,6 +1369,7 @@ CMakeFiles/tgv.dir/external/lodepng/lodepng.cpp.o
  /usr/include/c++/14.2/initializer_list
  /usr/include/c++/14.2/iosfwd
  /usr/include/c++/14.2/new
+ /usr/include/c++/14.2/numbers
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/stdlib.h
  /usr/include/c++/14.2/string
@@ -1489,6 +1520,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /home/escazure/cpp_projects/tgv/include/core.h
  /home/escazure/cpp_projects/tgv/include/gpu_timer.h
  /home/escazure/cpp_projects/tgv/include/helper.h
+ /home/escazure/cpp_projects/tgv/include/logger.h
  /home/escazure/cpp_projects/tgv/include/render.h
  /home/escazure/cpp_projects/tgv/include/sampler.h
  /home/escazure/cpp_projects/tgv/include/shader_program.h
@@ -1590,7 +1622,10 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/array
  /usr/include/c++/14.2/backward/binders.h
  /usr/include/c++/14.2/bit
+ /usr/include/c++/14.2/bits/algorithmfwd.h
+ /usr/include/c++/14.2/bits/align.h
  /usr/include/c++/14.2/bits/alloc_traits.h
+ /usr/include/c++/14.2/bits/allocated_ptr.h
  /usr/include/c++/14.2/bits/allocator.h
  /usr/include/c++/14.2/bits/basic_ios.h
  /usr/include/c++/14.2/bits/basic_ios.tcc
@@ -1599,11 +1634,13 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/bits/char_traits.h
  /usr/include/c++/14.2/bits/charconv.h
  /usr/include/c++/14.2/bits/chrono.h
+ /usr/include/c++/14.2/bits/chrono_io.h
  /usr/include/c++/14.2/bits/codecvt.h
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
  /usr/include/c++/14.2/bits/cxxabi_forced.h
  /usr/include/c++/14.2/bits/cxxabi_init_exception.h
+ /usr/include/c++/14.2/bits/enable_special_members.h
  /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/exception_ptr.h
@@ -1614,11 +1651,16 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/bits/invoke.h
  /usr/include/c++/14.2/bits/ios_base.h
  /usr/include/c++/14.2/bits/istream.tcc
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/locale_classes.h
  /usr/include/c++/14.2/bits/locale_classes.tcc
+ /usr/include/c++/14.2/bits/locale_conv.h
  /usr/include/c++/14.2/bits/locale_facets.h
  /usr/include/c++/14.2/bits/locale_facets.tcc
+ /usr/include/c++/14.2/bits/locale_facets_nonio.h
+ /usr/include/c++/14.2/bits/locale_facets_nonio.tcc
  /usr/include/c++/14.2/bits/localefwd.h
+ /usr/include/c++/14.2/bits/max_size_type.h
  /usr/include/c++/14.2/bits/memory_resource.h
  /usr/include/c++/14.2/bits/memoryfwd.h
  /usr/include/c++/14.2/bits/move.h
@@ -1630,26 +1672,40 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/bits/postypes.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/quoted_string.h
  /usr/include/c++/14.2/bits/range_access.h
+ /usr/include/c++/14.2/bits/ranges_algobase.h
+ /usr/include/c++/14.2/bits/ranges_base.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
+ /usr/include/c++/14.2/bits/ranges_util.h
  /usr/include/c++/14.2/bits/refwrap.h
  /usr/include/c++/14.2/bits/requires_hosted.h
+ /usr/include/c++/14.2/bits/shared_ptr.h
+ /usr/include/c++/14.2/bits/shared_ptr_base.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/sstream.tcc
  /usr/include/c++/14.2/bits/std_abs.h
+ /usr/include/c++/14.2/bits/stl_algo.h
  /usr/include/c++/14.2/bits/stl_algobase.h
  /usr/include/c++/14.2/bits/stl_bvector.h
  /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_function.h
+ /usr/include/c++/14.2/bits/stl_heap.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
  /usr/include/c++/14.2/bits/stl_pair.h
+ /usr/include/c++/14.2/bits/stl_tempbuf.h
  /usr/include/c++/14.2/bits/stl_uninitialized.h
  /usr/include/c++/14.2/bits/stl_vector.h
  /usr/include/c++/14.2/bits/streambuf.tcc
  /usr/include/c++/14.2/bits/streambuf_iterator.h
  /usr/include/c++/14.2/bits/string_view.tcc
  /usr/include/c++/14.2/bits/stringfwd.h
+ /usr/include/c++/14.2/bits/unicode-data.h
+ /usr/include/c++/14.2/bits/unicode.h
+ /usr/include/c++/14.2/bits/uniform_int_dist.h
+ /usr/include/c++/14.2/bits/unique_ptr.h
  /usr/include/c++/14.2/bits/uses_allocator.h
  /usr/include/c++/14.2/bits/uses_allocator_args.h
  /usr/include/c++/14.2/bits/utility.h
@@ -1659,6 +1715,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/cctype
  /usr/include/c++/14.2/cerrno
  /usr/include/c++/14.2/cfloat
+ /usr/include/c++/14.2/charconv
  /usr/include/c++/14.2/chrono
  /usr/include/c++/14.2/climits
  /usr/include/c++/14.2/clocale
@@ -1676,22 +1733,31 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/debug/assertions.h
  /usr/include/c++/14.2/debug/debug.h
  /usr/include/c++/14.2/exception
+ /usr/include/c++/14.2/ext/aligned_buffer.h
  /usr/include/c++/14.2/ext/alloc_traits.h
  /usr/include/c++/14.2/ext/atomicity.h
+ /usr/include/c++/14.2/ext/concurrence.h
  /usr/include/c++/14.2/ext/numeric_traits.h
  /usr/include/c++/14.2/ext/string_conversions.h
  /usr/include/c++/14.2/ext/type_traits.h
+ /usr/include/c++/14.2/format
  /usr/include/c++/14.2/fstream
  /usr/include/c++/14.2/initializer_list
+ /usr/include/c++/14.2/iomanip
  /usr/include/c++/14.2/ios
  /usr/include/c++/14.2/iosfwd
  /usr/include/c++/14.2/iostream
  /usr/include/c++/14.2/istream
  /usr/include/c++/14.2/limits
+ /usr/include/c++/14.2/locale
  /usr/include/c++/14.2/new
+ /usr/include/c++/14.2/numbers
+ /usr/include/c++/14.2/optional
  /usr/include/c++/14.2/ostream
+ /usr/include/c++/14.2/print
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/ratio
+ /usr/include/c++/14.2/span
  /usr/include/c++/14.2/sstream
  /usr/include/c++/14.2/stdexcept
  /usr/include/c++/14.2/stdlib.h
@@ -1714,6 +1780,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/tuple
  /usr/include/c++/14.2/type_traits
  /usr/include/c++/14.2/typeinfo
+ /usr/include/c++/14.2/variant
  /usr/include/c++/14.2/vector
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h
@@ -1727,7 +1794,9 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
@@ -1735,6 +1804,7 @@ CMakeFiles/tgv.dir/src/core.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/errno.h
  /usr/include/linux/limits.h
@@ -1979,6 +2049,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /home/escazure/cpp_projects/tgv/include/core.h
  /home/escazure/cpp_projects/tgv/include/gpu_timer.h
  /home/escazure/cpp_projects/tgv/include/helper.h
+ /home/escazure/cpp_projects/tgv/include/logger.h
  /home/escazure/cpp_projects/tgv/include/render.h
  /home/escazure/cpp_projects/tgv/include/sampler.h
  /home/escazure/cpp_projects/tgv/include/shader_program.h
@@ -2080,7 +2151,10 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/array
  /usr/include/c++/14.2/backward/binders.h
  /usr/include/c++/14.2/bit
+ /usr/include/c++/14.2/bits/algorithmfwd.h
+ /usr/include/c++/14.2/bits/align.h
  /usr/include/c++/14.2/bits/alloc_traits.h
+ /usr/include/c++/14.2/bits/allocated_ptr.h
  /usr/include/c++/14.2/bits/allocator.h
  /usr/include/c++/14.2/bits/basic_ios.h
  /usr/include/c++/14.2/bits/basic_ios.tcc
@@ -2089,11 +2163,13 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/bits/char_traits.h
  /usr/include/c++/14.2/bits/charconv.h
  /usr/include/c++/14.2/bits/chrono.h
+ /usr/include/c++/14.2/bits/chrono_io.h
  /usr/include/c++/14.2/bits/codecvt.h
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
  /usr/include/c++/14.2/bits/cxxabi_forced.h
  /usr/include/c++/14.2/bits/cxxabi_init_exception.h
+ /usr/include/c++/14.2/bits/enable_special_members.h
  /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/exception_ptr.h
@@ -2104,11 +2180,16 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/bits/invoke.h
  /usr/include/c++/14.2/bits/ios_base.h
  /usr/include/c++/14.2/bits/istream.tcc
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/locale_classes.h
  /usr/include/c++/14.2/bits/locale_classes.tcc
+ /usr/include/c++/14.2/bits/locale_conv.h
  /usr/include/c++/14.2/bits/locale_facets.h
  /usr/include/c++/14.2/bits/locale_facets.tcc
+ /usr/include/c++/14.2/bits/locale_facets_nonio.h
+ /usr/include/c++/14.2/bits/locale_facets_nonio.tcc
  /usr/include/c++/14.2/bits/localefwd.h
+ /usr/include/c++/14.2/bits/max_size_type.h
  /usr/include/c++/14.2/bits/memory_resource.h
  /usr/include/c++/14.2/bits/memoryfwd.h
  /usr/include/c++/14.2/bits/move.h
@@ -2120,26 +2201,40 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/bits/postypes.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/quoted_string.h
  /usr/include/c++/14.2/bits/range_access.h
+ /usr/include/c++/14.2/bits/ranges_algobase.h
+ /usr/include/c++/14.2/bits/ranges_base.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
+ /usr/include/c++/14.2/bits/ranges_util.h
  /usr/include/c++/14.2/bits/refwrap.h
  /usr/include/c++/14.2/bits/requires_hosted.h
+ /usr/include/c++/14.2/bits/shared_ptr.h
+ /usr/include/c++/14.2/bits/shared_ptr_base.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/sstream.tcc
  /usr/include/c++/14.2/bits/std_abs.h
+ /usr/include/c++/14.2/bits/stl_algo.h
  /usr/include/c++/14.2/bits/stl_algobase.h
  /usr/include/c++/14.2/bits/stl_bvector.h
  /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_function.h
+ /usr/include/c++/14.2/bits/stl_heap.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
  /usr/include/c++/14.2/bits/stl_pair.h
+ /usr/include/c++/14.2/bits/stl_tempbuf.h
  /usr/include/c++/14.2/bits/stl_uninitialized.h
  /usr/include/c++/14.2/bits/stl_vector.h
  /usr/include/c++/14.2/bits/streambuf.tcc
  /usr/include/c++/14.2/bits/streambuf_iterator.h
  /usr/include/c++/14.2/bits/string_view.tcc
  /usr/include/c++/14.2/bits/stringfwd.h
+ /usr/include/c++/14.2/bits/unicode-data.h
+ /usr/include/c++/14.2/bits/unicode.h
+ /usr/include/c++/14.2/bits/uniform_int_dist.h
+ /usr/include/c++/14.2/bits/unique_ptr.h
  /usr/include/c++/14.2/bits/uses_allocator.h
  /usr/include/c++/14.2/bits/uses_allocator_args.h
  /usr/include/c++/14.2/bits/utility.h
@@ -2149,6 +2244,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/cctype
  /usr/include/c++/14.2/cerrno
  /usr/include/c++/14.2/cfloat
+ /usr/include/c++/14.2/charconv
  /usr/include/c++/14.2/chrono
  /usr/include/c++/14.2/climits
  /usr/include/c++/14.2/clocale
@@ -2166,22 +2262,31 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/debug/assertions.h
  /usr/include/c++/14.2/debug/debug.h
  /usr/include/c++/14.2/exception
+ /usr/include/c++/14.2/ext/aligned_buffer.h
  /usr/include/c++/14.2/ext/alloc_traits.h
  /usr/include/c++/14.2/ext/atomicity.h
+ /usr/include/c++/14.2/ext/concurrence.h
  /usr/include/c++/14.2/ext/numeric_traits.h
  /usr/include/c++/14.2/ext/string_conversions.h
  /usr/include/c++/14.2/ext/type_traits.h
+ /usr/include/c++/14.2/format
  /usr/include/c++/14.2/fstream
  /usr/include/c++/14.2/initializer_list
+ /usr/include/c++/14.2/iomanip
  /usr/include/c++/14.2/ios
  /usr/include/c++/14.2/iosfwd
  /usr/include/c++/14.2/iostream
  /usr/include/c++/14.2/istream
  /usr/include/c++/14.2/limits
+ /usr/include/c++/14.2/locale
  /usr/include/c++/14.2/new
+ /usr/include/c++/14.2/numbers
+ /usr/include/c++/14.2/optional
  /usr/include/c++/14.2/ostream
+ /usr/include/c++/14.2/print
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/ratio
+ /usr/include/c++/14.2/span
  /usr/include/c++/14.2/sstream
  /usr/include/c++/14.2/stdexcept
  /usr/include/c++/14.2/stdlib.h
@@ -2204,6 +2309,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/tuple
  /usr/include/c++/14.2/type_traits
  /usr/include/c++/14.2/typeinfo
+ /usr/include/c++/14.2/variant
  /usr/include/c++/14.2/vector
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h
@@ -2217,7 +2323,9 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
@@ -2225,6 +2333,7 @@ CMakeFiles/tgv.dir/src/helper.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/errno.h
  /usr/include/linux/limits.h
@@ -2570,7 +2679,10 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/array
  /usr/include/c++/14.2/backward/binders.h
  /usr/include/c++/14.2/bit
+ /usr/include/c++/14.2/bits/algorithmfwd.h
+ /usr/include/c++/14.2/bits/align.h
  /usr/include/c++/14.2/bits/alloc_traits.h
+ /usr/include/c++/14.2/bits/allocated_ptr.h
  /usr/include/c++/14.2/bits/allocator.h
  /usr/include/c++/14.2/bits/basic_ios.h
  /usr/include/c++/14.2/bits/basic_ios.tcc
@@ -2579,11 +2691,13 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/bits/char_traits.h
  /usr/include/c++/14.2/bits/charconv.h
  /usr/include/c++/14.2/bits/chrono.h
+ /usr/include/c++/14.2/bits/chrono_io.h
  /usr/include/c++/14.2/bits/codecvt.h
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
  /usr/include/c++/14.2/bits/cxxabi_forced.h
  /usr/include/c++/14.2/bits/cxxabi_init_exception.h
+ /usr/include/c++/14.2/bits/enable_special_members.h
  /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/exception_ptr.h
@@ -2594,11 +2708,16 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/bits/invoke.h
  /usr/include/c++/14.2/bits/ios_base.h
  /usr/include/c++/14.2/bits/istream.tcc
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/locale_classes.h
  /usr/include/c++/14.2/bits/locale_classes.tcc
+ /usr/include/c++/14.2/bits/locale_conv.h
  /usr/include/c++/14.2/bits/locale_facets.h
  /usr/include/c++/14.2/bits/locale_facets.tcc
+ /usr/include/c++/14.2/bits/locale_facets_nonio.h
+ /usr/include/c++/14.2/bits/locale_facets_nonio.tcc
  /usr/include/c++/14.2/bits/localefwd.h
+ /usr/include/c++/14.2/bits/max_size_type.h
  /usr/include/c++/14.2/bits/memory_resource.h
  /usr/include/c++/14.2/bits/memoryfwd.h
  /usr/include/c++/14.2/bits/move.h
@@ -2610,26 +2729,40 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/bits/postypes.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/quoted_string.h
  /usr/include/c++/14.2/bits/range_access.h
+ /usr/include/c++/14.2/bits/ranges_algobase.h
+ /usr/include/c++/14.2/bits/ranges_base.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
+ /usr/include/c++/14.2/bits/ranges_util.h
  /usr/include/c++/14.2/bits/refwrap.h
  /usr/include/c++/14.2/bits/requires_hosted.h
+ /usr/include/c++/14.2/bits/shared_ptr.h
+ /usr/include/c++/14.2/bits/shared_ptr_base.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/sstream.tcc
  /usr/include/c++/14.2/bits/std_abs.h
+ /usr/include/c++/14.2/bits/stl_algo.h
  /usr/include/c++/14.2/bits/stl_algobase.h
  /usr/include/c++/14.2/bits/stl_bvector.h
  /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_function.h
+ /usr/include/c++/14.2/bits/stl_heap.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
  /usr/include/c++/14.2/bits/stl_pair.h
+ /usr/include/c++/14.2/bits/stl_tempbuf.h
  /usr/include/c++/14.2/bits/stl_uninitialized.h
  /usr/include/c++/14.2/bits/stl_vector.h
  /usr/include/c++/14.2/bits/streambuf.tcc
  /usr/include/c++/14.2/bits/streambuf_iterator.h
  /usr/include/c++/14.2/bits/string_view.tcc
  /usr/include/c++/14.2/bits/stringfwd.h
+ /usr/include/c++/14.2/bits/unicode-data.h
+ /usr/include/c++/14.2/bits/unicode.h
+ /usr/include/c++/14.2/bits/uniform_int_dist.h
+ /usr/include/c++/14.2/bits/unique_ptr.h
  /usr/include/c++/14.2/bits/uses_allocator.h
  /usr/include/c++/14.2/bits/uses_allocator_args.h
  /usr/include/c++/14.2/bits/utility.h
@@ -2639,6 +2772,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/cctype
  /usr/include/c++/14.2/cerrno
  /usr/include/c++/14.2/cfloat
+ /usr/include/c++/14.2/charconv
  /usr/include/c++/14.2/chrono
  /usr/include/c++/14.2/climits
  /usr/include/c++/14.2/clocale
@@ -2656,22 +2790,30 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/debug/assertions.h
  /usr/include/c++/14.2/debug/debug.h
  /usr/include/c++/14.2/exception
+ /usr/include/c++/14.2/ext/aligned_buffer.h
  /usr/include/c++/14.2/ext/alloc_traits.h
  /usr/include/c++/14.2/ext/atomicity.h
+ /usr/include/c++/14.2/ext/concurrence.h
  /usr/include/c++/14.2/ext/numeric_traits.h
  /usr/include/c++/14.2/ext/string_conversions.h
  /usr/include/c++/14.2/ext/type_traits.h
+ /usr/include/c++/14.2/format
  /usr/include/c++/14.2/fstream
  /usr/include/c++/14.2/initializer_list
+ /usr/include/c++/14.2/iomanip
  /usr/include/c++/14.2/ios
  /usr/include/c++/14.2/iosfwd
  /usr/include/c++/14.2/iostream
  /usr/include/c++/14.2/istream
  /usr/include/c++/14.2/limits
+ /usr/include/c++/14.2/locale
  /usr/include/c++/14.2/new
+ /usr/include/c++/14.2/numbers
+ /usr/include/c++/14.2/optional
  /usr/include/c++/14.2/ostream
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/ratio
+ /usr/include/c++/14.2/span
  /usr/include/c++/14.2/sstream
  /usr/include/c++/14.2/stdexcept
  /usr/include/c++/14.2/stdlib.h
@@ -2694,6 +2836,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/tuple
  /usr/include/c++/14.2/type_traits
  /usr/include/c++/14.2/typeinfo
+ /usr/include/c++/14.2/variant
  /usr/include/c++/14.2/vector
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h
@@ -2707,7 +2850,9 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
@@ -2715,6 +2860,7 @@ CMakeFiles/tgv.dir/src/main.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/errno.h
  /usr/include/linux/limits.h
@@ -3061,7 +3207,10 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/array
  /usr/include/c++/14.2/backward/binders.h
  /usr/include/c++/14.2/bit
+ /usr/include/c++/14.2/bits/algorithmfwd.h
+ /usr/include/c++/14.2/bits/align.h
  /usr/include/c++/14.2/bits/alloc_traits.h
+ /usr/include/c++/14.2/bits/allocated_ptr.h
  /usr/include/c++/14.2/bits/allocator.h
  /usr/include/c++/14.2/bits/basic_ios.h
  /usr/include/c++/14.2/bits/basic_ios.tcc
@@ -3070,11 +3219,13 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/bits/char_traits.h
  /usr/include/c++/14.2/bits/charconv.h
  /usr/include/c++/14.2/bits/chrono.h
+ /usr/include/c++/14.2/bits/chrono_io.h
  /usr/include/c++/14.2/bits/codecvt.h
  /usr/include/c++/14.2/bits/concept_check.h
  /usr/include/c++/14.2/bits/cpp_type_traits.h
  /usr/include/c++/14.2/bits/cxxabi_forced.h
  /usr/include/c++/14.2/bits/cxxabi_init_exception.h
+ /usr/include/c++/14.2/bits/enable_special_members.h
  /usr/include/c++/14.2/bits/exception.h
  /usr/include/c++/14.2/bits/exception_defines.h
  /usr/include/c++/14.2/bits/exception_ptr.h
@@ -3085,11 +3236,16 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/bits/invoke.h
  /usr/include/c++/14.2/bits/ios_base.h
  /usr/include/c++/14.2/bits/istream.tcc
+ /usr/include/c++/14.2/bits/iterator_concepts.h
  /usr/include/c++/14.2/bits/locale_classes.h
  /usr/include/c++/14.2/bits/locale_classes.tcc
+ /usr/include/c++/14.2/bits/locale_conv.h
  /usr/include/c++/14.2/bits/locale_facets.h
  /usr/include/c++/14.2/bits/locale_facets.tcc
+ /usr/include/c++/14.2/bits/locale_facets_nonio.h
+ /usr/include/c++/14.2/bits/locale_facets_nonio.tcc
  /usr/include/c++/14.2/bits/localefwd.h
+ /usr/include/c++/14.2/bits/max_size_type.h
  /usr/include/c++/14.2/bits/memory_resource.h
  /usr/include/c++/14.2/bits/memoryfwd.h
  /usr/include/c++/14.2/bits/move.h
@@ -3101,26 +3257,40 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/bits/postypes.h
  /usr/include/c++/14.2/bits/predefined_ops.h
  /usr/include/c++/14.2/bits/ptr_traits.h
+ /usr/include/c++/14.2/bits/quoted_string.h
  /usr/include/c++/14.2/bits/range_access.h
+ /usr/include/c++/14.2/bits/ranges_algobase.h
+ /usr/include/c++/14.2/bits/ranges_base.h
+ /usr/include/c++/14.2/bits/ranges_cmp.h
+ /usr/include/c++/14.2/bits/ranges_util.h
  /usr/include/c++/14.2/bits/refwrap.h
  /usr/include/c++/14.2/bits/requires_hosted.h
+ /usr/include/c++/14.2/bits/shared_ptr.h
+ /usr/include/c++/14.2/bits/shared_ptr_base.h
  /usr/include/c++/14.2/bits/specfun.h
  /usr/include/c++/14.2/bits/sstream.tcc
  /usr/include/c++/14.2/bits/std_abs.h
+ /usr/include/c++/14.2/bits/stl_algo.h
  /usr/include/c++/14.2/bits/stl_algobase.h
  /usr/include/c++/14.2/bits/stl_bvector.h
  /usr/include/c++/14.2/bits/stl_construct.h
  /usr/include/c++/14.2/bits/stl_function.h
+ /usr/include/c++/14.2/bits/stl_heap.h
  /usr/include/c++/14.2/bits/stl_iterator.h
  /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14.2/bits/stl_iterator_base_types.h
  /usr/include/c++/14.2/bits/stl_pair.h
+ /usr/include/c++/14.2/bits/stl_tempbuf.h
  /usr/include/c++/14.2/bits/stl_uninitialized.h
  /usr/include/c++/14.2/bits/stl_vector.h
  /usr/include/c++/14.2/bits/streambuf.tcc
  /usr/include/c++/14.2/bits/streambuf_iterator.h
  /usr/include/c++/14.2/bits/string_view.tcc
  /usr/include/c++/14.2/bits/stringfwd.h
+ /usr/include/c++/14.2/bits/unicode-data.h
+ /usr/include/c++/14.2/bits/unicode.h
+ /usr/include/c++/14.2/bits/uniform_int_dist.h
+ /usr/include/c++/14.2/bits/unique_ptr.h
  /usr/include/c++/14.2/bits/uses_allocator.h
  /usr/include/c++/14.2/bits/uses_allocator_args.h
  /usr/include/c++/14.2/bits/utility.h
@@ -3130,6 +3300,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/cctype
  /usr/include/c++/14.2/cerrno
  /usr/include/c++/14.2/cfloat
+ /usr/include/c++/14.2/charconv
  /usr/include/c++/14.2/chrono
  /usr/include/c++/14.2/climits
  /usr/include/c++/14.2/clocale
@@ -3147,22 +3318,30 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/debug/assertions.h
  /usr/include/c++/14.2/debug/debug.h
  /usr/include/c++/14.2/exception
+ /usr/include/c++/14.2/ext/aligned_buffer.h
  /usr/include/c++/14.2/ext/alloc_traits.h
  /usr/include/c++/14.2/ext/atomicity.h
+ /usr/include/c++/14.2/ext/concurrence.h
  /usr/include/c++/14.2/ext/numeric_traits.h
  /usr/include/c++/14.2/ext/string_conversions.h
  /usr/include/c++/14.2/ext/type_traits.h
+ /usr/include/c++/14.2/format
  /usr/include/c++/14.2/fstream
  /usr/include/c++/14.2/initializer_list
+ /usr/include/c++/14.2/iomanip
  /usr/include/c++/14.2/ios
  /usr/include/c++/14.2/iosfwd
  /usr/include/c++/14.2/iostream
  /usr/include/c++/14.2/istream
  /usr/include/c++/14.2/limits
+ /usr/include/c++/14.2/locale
  /usr/include/c++/14.2/new
+ /usr/include/c++/14.2/numbers
+ /usr/include/c++/14.2/optional
  /usr/include/c++/14.2/ostream
  /usr/include/c++/14.2/pstl/pstl_config.h
  /usr/include/c++/14.2/ratio
+ /usr/include/c++/14.2/span
  /usr/include/c++/14.2/sstream
  /usr/include/c++/14.2/stdexcept
  /usr/include/c++/14.2/stdlib.h
@@ -3185,6 +3364,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/tuple
  /usr/include/c++/14.2/type_traits
  /usr/include/c++/14.2/typeinfo
+ /usr/include/c++/14.2/variant
  /usr/include/c++/14.2/vector
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/atomic_word.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/basic_file.h
@@ -3198,7 +3378,9 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/error_constants.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr-default.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/gthr.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/messages_members.h
  /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
@@ -3206,6 +3388,7 @@ CMakeFiles/tgv.dir/src/render.cpp.o
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/errno.h
  /usr/include/linux/limits.h

@@ -1,5 +1,6 @@
 #include "helper.h"
 #include "render.h"
+#include "logger.h"
 
 bool g_is_capturing = false;
 
@@ -246,12 +247,12 @@ void debugMessageCallback(unsigned int source, unsigned int type, unsigned int i
         	break;
     }
 	
-	std::cout << id << ": " << _type << " of " << _severity << ", raised from " << _source << ": " << msg << "\n";
+	log(MESSAGE_INFO, std::format("{}: {} of {}, raised from {}: {}", id, _type, _severity, _source, msg));
 }
 
 void exportTexture(const std::string& basePath, const Texture* texture, unsigned int bits){
 	if(texture == nullptr){
-		std::cout << "ERROR: Trying to write an empty texture\n";
+		log(MESSAGE_ERROR, "[EXPORT ERROR] Trying to write an empty texture"); 
 		return;
 	}
 
@@ -280,7 +281,7 @@ void exportTexture(const std::string& basePath, const Texture* texture, unsigned
 		if(!error) 
 			lodepng::save_file(png, pngPath);
 		else 
-			std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+			log(MESSAGE_ERROR, std::format("[LodePNG EXPORT ERROR] {}", lodepng_error_text(error)));
 	}
 	else if(bits == GL_UNSIGNED_BYTE){
 		std::vector<uint8_t> buffer(width * height);
@@ -296,7 +297,7 @@ void exportTexture(const std::string& basePath, const Texture* texture, unsigned
 		if(!error) 
 			lodepng::save_file(png, pngPath);
 		else 
-			std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+			log(MESSAGE_ERROR, std::format("[LodePNG EXPORT ERROR] {}", lodepng_error_text(error)));
 	}
 }
 
@@ -305,24 +306,24 @@ void importTexture(const std::string& path, Texture*& texture, bool scaleHeight)
     std::vector<unsigned char> pngFile;
     unsigned error = lodepng::load_file(pngFile, path);
     if(error){
-        std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+		log(MESSAGE_ERROR, std::format("[LodePNG IMPORT ERROR] {}", lodepng_error_text(error)));
         return;
     }
 	
 	unsigned int width, height, bitDepth;
 	error = lodepng_inspect(&width, &height, &pngState, pngFile.data(), pngFile.size());
     if(error){
-        std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+		log(MESSAGE_ERROR, std::format("[LodePNG IMPORT ERROR] {}", lodepng_error_text(error)));
         return;
     }
 
 	bitDepth = pngState.info_png.color.bitdepth;
 
 	if(state.logging){
-		std::cout << "Importing a Heightmap:\n";
-		std::cout << "Width: " << width << "\n";
-		std::cout << "Height: " << height << "\n";
-		std::cout << "Bits per channel: " << bitDepth << "\n";
+		log(MESSAGE_INFO, "[HEIGHTMAP IMPORT] Importing a Heightmap:");
+		log(MESSAGE_INFO, std::format("Width - {}", width));
+		log(MESSAGE_INFO, std::format("Height - {}", height));
+		log(MESSAGE_INFO, std::format("Bit depth- {}", bitDepth));
 	}
 
 	std::vector<float> floatData(width * height);
@@ -334,7 +335,7 @@ void importTexture(const std::string& path, Texture*& texture, bool scaleHeight)
 		std::vector<unsigned char> imageBuffer;
 		error = lodepng::decode(imageBuffer, width, height, pngState, pngFile);
 		if(error){
-            std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+			log(MESSAGE_ERROR, std::format("[LodePNG IMPORT ERROR] {}", lodepng_error_text(error)));
             return;
         }
 
@@ -351,7 +352,7 @@ void importTexture(const std::string& path, Texture*& texture, bool scaleHeight)
 		std::vector<unsigned char> imageBuffer;
 		error = lodepng::decode(imageBuffer, width, height, pngState, pngFile);
 		if(error){
-            std::cout << "LodePNG Error: " << lodepng_error_text(error) << "\n";
+			log(MESSAGE_ERROR, std::format("[LodePNG IMPORT ERROR] {}", lodepng_error_text(error)));
             return;
         }
 
@@ -369,4 +370,9 @@ void importTexture(const std::string& path, Texture*& texture, bool scaleHeight)
 		texture->resize(texture->_mipMapLevels, width, height, 0);
 
 	texture->loadPixels(width, height, floatData.data());
+}
+
+std::string getGLString(GLenum name){
+	auto ptr = glGetString(name);	
+	return ptr ? std::string(reinterpret_cast<const char*>(ptr)) : std::string("UNKNOWN");
 }
