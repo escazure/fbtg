@@ -155,7 +155,7 @@ void main(){
 
 	vec2 ndc = (clipSpacePos.xy / clipSpacePos.w) * 0.5 + 0.5;
 	vec2 reflectUV = ndc;
-	vec2 offsetStrength = vec2(0.002);
+	vec2 offsetStrength = vec2(0.002, 0.0);
 
 	vec2 warpedUV = clamp(reflectUV + (waveSlope * offsetStrength), 0.001, 0.999);
 	vec4 terrainReflection = texture(uReflectionMap, warpedUV);
