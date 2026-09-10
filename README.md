@@ -46,14 +46,14 @@ An OpenGL-based procedural terrain generator driven by UDF.
 
 ## Build
 
-```cmake -B build```
+```cmake -B build```<br/>
 ```cmake --build build```
 
 ---
 
 ## Run
 
-*Runs only on Linux.*
+*Runs only on Linux.*<br/>
 *By default uses discrete GPU.*
 
 ```./build/tgv [options]```
