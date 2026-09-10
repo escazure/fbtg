@@ -128,15 +128,15 @@ namespace UI{
 
 
         if(state.show_noise_window){
-            ImGui::SetNextWindowSize(ImVec2(680.0f, 380.0f), ImGuiCond_FirstUseEver);
-            ImGui::SetNextWindowPos(ImVec2(state.window_width / 2.0f - 340.0f, state.window_height / 2.0f - 190.0f), ImGuiCond_FirstUseEver);
+            ImGui::SetNextWindowSize(ImVec2(1200.0f, 500.0f), ImGuiCond_FirstUseEver);
+            ImGui::SetNextWindowPos(ImVec2(state.window_width / 2.0f - 600.0f, state.window_height / 2.0f - 250.0f), ImGuiCond_FirstUseEver);
             
             if(ImGui::Begin("Noise & Utility Functions API", &state.show_noise_window)){
                 ImGui::TextDisabled("Hand-written Utility Library Functions Available in UDF");
                 ImGui::Spacing();
 
                 if(ImGui::BeginTable("ApiDocsTable", 2, ImGuiTableFlags_BordersInnerH | ImGuiTableFlags_RowBg | ImGuiTableFlags_SizingStretchSame)){
-                    ImGui::TableSetupColumn("Function Signature", ImGuiTableColumnFlags_WidthFixed, 350.0f);
+                    ImGui::TableSetupColumn("Function Signature", ImGuiTableColumnFlags_WidthFixed, 650.0f);
                     ImGui::TableSetupColumn("Description", ImGuiTableColumnFlags_WidthStretch);
                     ImGui::TableHeadersRow();
 
@@ -148,14 +148,25 @@ namespace UI{
                         ImGui::TextWrapped("%s", desc);
                     };
 
+                    AddRow("uint uihash(uint v)", "Returns semi-random unsigned integer value.");
+                    AddRow("float hash21(vec2 p)", "Returns semi-random float value.");
                     AddRow("vec2 hash22(vec2 p)", "Returns semi-random gradient vector.");
-                    AddRow("uint hashSeed(uint seed)", "Returns semi-random seed value.");
-                    AddRow("vec2 shiftUV(vec2 uv, float shiftSize, int seed)", "Helper function to shift uv coordinates based on seed.");
+
+					AddRow("float smin(float a, float b, float k)", "Smooth minimum by Inigo Quilez.");
+                    AddRow("vec2 shiftUV(vec2 uv, float shiftSize, int seed)", "Helper function to semi-randomly shift uv coordinates based on seed.");
+					AddRow("float bellCurve(vec2 pos, float radius, float amplitude)", "Helper function for Gaussian Bell Curve.");
+					AddRow("vec2 warpUV(vec2 uv, int octaves)", "Helper function for domain warping, uses fBm for offset calculations.");
+
+					AddRow("float valueNoise(vec2 uv)", "2D value noise interpolation map.");
                     AddRow("float perlinNoise(vec2 uv)", "2D perlin noise interpolation map.");
                     AddRow("vec3 perlinNoiseDerivatives(vec2 uv)", "2D perlin noise interpolation map, with x/y analytical derivatives.");
-                    AddRow("float fbm(vec2 uv, int octaves)", "Fractional Brownian Motion noise over multiple layered octaves.");
-                    AddRow("float fbmErosion(vec2 uv, int octaves, float erosionStrength)", "Fractional Brownian Motion noise over multiple layered octaves, that uses gradients to smooth out details on high slopes.");
-                    AddRow("float example(vec2 uv, float baseFrequency = 0.0004, float baseAmplitude = 2200.0, float erosionStrength = 2.5, int octaves = 8)", "Pre-built terrain function based on fBm and gradient based erosion.");
+					AddRow("float voronoiNoise(vec2 uv, float cellSize)", "2D voronoi map.");
+
+                    AddRow("float fbm(vec2 uv, int octaves)", "Fractal Brownian Motion noise over multiple layered octaves.");
+                    AddRow("float fbmErosion(vec2 uv, int octaves, float erosionStrength)", "Fractal Brownian Motion noise over multiple layered octaves, that uses gradients to smooth out details on high slopes.");
+					AddRow("float fbmVoronoi(vec2 uv, int octaves, float cellSize)", "Fractal Brownian Motion noise over multiple layered octaves, uses voronoi noise.");
+
+                    AddRow("float example(vec2 uv, float frequency, float amplitude, float erosion, int octaves)", "Pre-built terrain function based on fBm and gradient based erosion.");
 
                     ImGui::EndTable();
                 }

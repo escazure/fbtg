@@ -11,6 +11,15 @@ vec2 uv;
 vec2 worldPos;
 
 const float ONE_OVER_SQRT_TWO = 1.0 / sqrt(2.0);
+const float ONE_OVER_MAX_UINT = 1.0 / 0xFFFFFFFFu;
+
+uint uihash(uint v){
+	v += 1664525u;
+	v ^= v >> 12u;
+	v *= 1664525u;
+	v ^= v >> 16u;
+	return v;	
+}
 
 float hash21(vec2 p){
 	uvec2 v = floatBitsToUint(p);
@@ -36,15 +45,6 @@ vec2 hash22(vec2 p){
 	return res;
 }
 
-uint hashSeed(uint seed) {
-    seed ^= seed >> 16u;
-    seed *= 0x85ebac88u;
-    seed ^= seed >> 13u;
-    seed *= 0x4ac849bau;
-    seed ^= seed >> 16u;
-    return seed;
-}
-
 // Smooth min by Inigo Quilez
 float smin(float a, float b, float k){
     k *= 4.0;
@@ -53,17 +53,17 @@ float smin(float a, float b, float k){
 }
 
 vec2 shiftUV(vec2 uv, float shiftSize, int seed){
-	uint hashX = hashSeed(uint(seed));
-	uint hashZ = hashSeed(hashX);
+	uint hashX = uihash(uint(seed));
+	uint hashZ = uihash(hashX);
 
-	float normalizedX = (float(hashX) / 4294967295.0) * 2.0 - 1.0;
-	float normalizedZ = (float(hashZ) / 4294967295.0) * 2.0 - 1.0;
+	float normalizedX = (float(hashX) * ONE_OVER_MAX_UINT) * 2.0 - 1.0;
+	float normalizedZ = (float(hashZ) * ONE_OVER_MAX_UINT) * 2.0 - 1.0;
 
 	return vec2(normalizedX, normalizedZ) * shiftSize + uv;
 }
 
-float bellCurve(vec2 uv, float radius, float amplitude){
-	float r2 = uv.x * uv.x + uv.y * uv.y;
+float bellCurve(vec2 pos, float radius, float amplitude){
+	float r2 = pos.x * pos.x + pos.y * pos.y;
 	return exp(-r2 / (2.0 * radius * radius)) * amplitude;
 }
 
@@ -158,17 +158,6 @@ float voronoiNoise(vec2 uv, float cellSize){
 	return clamp(normalizedDist, 0.0, 1.0);
 }
 
-float fbmVoronoi(vec2 uv, int octaves, float cellSize){
-	float total = 0.0;
-	float amplitude = 1.0;
-	for(int i = 0; i < octaves; i++){
-		total += amplitude * voronoiNoise(uv, cellSize);
-		uv *= 2.0;
-		amplitude *= 0.5;
-	}
-	return total;
-}
-
 float fbm(vec2 uv, int octaves){
 	float total = 0.0;
 	float amplitude = 1.0;
@@ -198,17 +187,28 @@ float fbmErosion(vec2 uv, int octaves, float erosionStrength){
 	return total;
 }
 
+float fbmVoronoi(vec2 uv, int octaves, float cellSize){
+	float total = 0.0;
+	float amplitude = 1.0;
+	for(int i = 0; i < octaves; i++){
+		total += amplitude * voronoiNoise(uv, cellSize);
+		uv *= 2.0;
+		amplitude *= 0.5;
+	}
+	return total;
+}
+
 vec2 warpUV(vec2 uv, int octaves){
 	float offset = fbm(uv, octaves);
 	return vec2(uv.x + offset, uv.y - offset);
 }
 
-float example(vec2 uv, float baseFrequency, float baseAmplitude, float erosionStrength, int octaves){
+float example(vec2 uv, float frequency, float amplitude, float erosion, int octaves){
 	const float shiftSize = 500000.0;
 
 	vec2 offsetUV = shiftUV(uv, shiftSize, uSeed);
 	vec2 warp = warpUV(offsetUV, 8);
-	float height = fbmErosion(warp * baseFrequency, octaves, erosionStrength) * baseAmplitude;
+	float height = fbmErosion(warp * frequency, octaves, erosion) * amplitude;
 
 	return height;
 }
