@@ -19,34 +19,42 @@ An OpenGL-based procedural terrain generator driven by UDF.
 | Generated Terrain | With Water |
 | :---: | :---: |
 | <img src="assets/4k_plane.png" width="400"/> | <img src="assets/4k_plane_with_water.png" width="400"/> |
+
 | Altitude Map | Greyscale Heightmap |
 | :---: | :---: |
 | <img src="assets/4k_plane_altitude_map.png" width="400"/> | <img src="assets/4k_plane_greyscale_map.png" width="400"/> |
 
 
 <p align="center">
-    <img src="assets/generated_terrain_example1.png" width="350"/>
-    <img src="assets/generated_terrain_example2.png" width="350"/>
-    <img src="assets/generated_terrain_example3.png" width="350"/>
+    <img src="assets/generated_terrain_example1.png" width="380"/>
+    <img src="assets/generated_terrain_example2.png" width="380"/>
+    <img src="assets/generated_terrain_example3.png" width="380"/>
 </p>
 
 ---
 
 ## Dependencies
 
-- **GLFW** - window management
-- **GL3W** - OpenGL function loading
-- **OpenGL** - rendering
-- **GLM** - math
-- **ImGui** - GUI
-- **LodePNG** - png import/export
+- **GLFW**: Window Management
+- **GL3W**: OpenGL Function Loading
+- **OpenGL**: Rendering
+- **GLM**: Math
+- **ImGui**: GUI
+- **LodePNG**: PNG import/export
+
+---
+
+## Build
+
+```cmake -B build```
+```cmake --build build```
 
 ---
 
 ## Run
 
 *Runs only on Linux.*
-*By default runs on discrete GPU.*
+*By default uses discrete GPU.*
 
 ```./build/tgv [options]```
 
@@ -54,9 +62,3 @@ Options:
 - `--log`: Logs to console various information during runtime.
 - `--debug`: Enables OpenGL debug callback.
 - `--integrated`: Uses integrated GPU instead of discrete.
-
----
-
-## Build
-
-```cmake --build build```
